@@ -15,7 +15,9 @@
 - [x] Componente NavBar (Logo + botones de categorías).
 - [x] Componente CartWidget (con ícono y nº).
 - [x] Componente contenedor ItemListContainer.js con una prop greeting.
-- [x] Componente Footer (extra).
+- [x] Componente Footer (extra).  
+
+
 
 
 
