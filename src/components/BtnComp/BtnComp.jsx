@@ -1,4 +1,5 @@
 import React from 'react';
+import './BtnComp.css';
 
 export default function BtnComp({ nombre, color, src }) {
   const misEstilos = {

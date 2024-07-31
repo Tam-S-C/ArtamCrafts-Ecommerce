@@ -1,7 +1,11 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
 }
 
+.contenedorTotal {
+  min-height: 90dvh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
