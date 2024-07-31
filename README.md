@@ -1,4 +1,4 @@
-<h2>**ArTam CraftS - Ecommerce**</h2>
+<h1>ArTam CraftS - Ecommerce</h1>
 <h3>Tienda de Diseño y Papelería Artesanal </h3>
 
 > Curso: React JS - CoderHouse - Comisión 60020
