@@ -1,18 +1,17 @@
-export default function BtnComp({ nombre, color }) {
-    const misEstilos = {
-      backgroundColor: color,
-    };
-  
-    const handleClick = () => {
-      alert(`Estas en la seccion de ${nombre}`);
-    };
-  
-    return (
-      <>
-        <button onClick={handleClick} style={misEstilos}>
-          {nombre}
-        </button>
-      </>
-    );
-  }
-  
+import React from 'react';
+
+export default function BtnComp({ nombre, color, src }) {
+  const misEstilos = {
+    backgroundColor: color,
+  };
+
+  const handleClick = () => {
+    alert(`Estás en la sección de ${nombre}`);
+  };
+
+  return (
+    <button className="btn-comp" style={misEstilos} onClick={handleClick}>
+      {src ? <img src={src} alt={nombre} width={36} className="btn-image" /> : nombre}
+    </button>
+  );
+}
