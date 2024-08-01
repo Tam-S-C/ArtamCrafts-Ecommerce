@@ -1,6 +1,6 @@
 import './App.css';
-import Footer from './components/Footer/Footer';
-import ItemListContainer from './components/ItemListContainer/ItemListContainerComp';
+import FooterBar from './components/FooterBar/FooterBar';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import NavBar from './components/NavBar/NavBar';
 
 
@@ -9,8 +9,8 @@ function App() {
     <>
     <div className='contenedorTotal'>
       <NavBar />
-      <ItemListContainer />
-      <Footer />
+      <ItemListContainer greeting='Bienvenidos a ArTamCrafts - Web en construcción, disculpa las moslestias.'/>
+      <FooterBar />
     </div>
     </>
   );

@@ -1,7 +1,8 @@
-.barra {
+.barraNavegacion {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 15px;
+    gap: 8px;
+    margin: 5px;
   }
   

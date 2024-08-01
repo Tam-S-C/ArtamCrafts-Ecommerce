@@ -2,7 +2,7 @@ import React from 'react';
 import './BtnComp.css';
 
 export default function BtnComp({ nombre, color, src }) {
-  const misEstilos = {
+  const estiloBotonNav = {
     backgroundColor: color,
   };
 
@@ -11,8 +11,10 @@ export default function BtnComp({ nombre, color, src }) {
   };
 
   return (
-    <button className="btn-comp" style={misEstilos} onClick={handleClick}>
+    <>
+    <button className="btn-comp" style={estiloBotonNav} onClick={handleClick}>
       {src ? <img src={src} alt={nombre} width={36} className="btn-image" /> : nombre}
     </button>
+    </>
   );
 }
