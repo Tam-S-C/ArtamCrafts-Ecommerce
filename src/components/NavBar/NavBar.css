@@ -1,4 +1,4 @@
-.barraNavegacion, header {
+.barraNavegacion {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -9,11 +9,4 @@
     padding: 2px;
   }
 
-  input {
-    height: 24px;
-    border-radius: 16px;
-    border: none;
-    background-color: rgb(143, 255, 218);
-    color:black;
-  }
-  
+

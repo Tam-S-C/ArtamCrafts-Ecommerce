@@ -1,14 +1,14 @@
 import React from 'react';
-import './NavBar.css'
 import BtnComp from '../BtnComp/BtnComp.jsx';
+import logo from '/Logo.png';
+import './HeaderComp.css';
 
-export default function NavBar() {
+export default function HeaderComp() {
   return (
     <>
       <header>
-        <BtnComp src="/Logo.png" nombre="Inicio" color="#4ed9b9"/>
-        <input></input>
-        <p>🔍</p>
+        <BtnComp src={logo} nombre="Inicio" color="#4ed9b9"/>
+        <input placeholder=' Escribe tu búsqueda... 🔍'></input>
         <p>🛒1</p>
       </header>
     </>

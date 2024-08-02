@@ -6,7 +6,10 @@ export default function ItemListContainer({greeting}) {
     <>
       <main>
         <hr></hr>
-        <h3>{greeting}</h3>
+        <br></br>
+        <h2>{greeting}</h2>
+        <h3>🚧 Web en construcción 🚧</h3>
+        <p>Disculpe las molestas.</p>
       </main>
     </>
   );

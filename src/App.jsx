@@ -11,7 +11,7 @@ function App() {
       <div className='contenedorTotal'>
         <HeaderComp />
         <NavBar />
-        <ItemListContainer greeting='Bienvenidos a ArTamCrafts - Web en construcción, disculpe las moslestias.'/>
+        <ItemListContainer greeting='Bienvenidos a ArTamCrafts!!'/>
         <FooterBar />
       </div>
     </>
