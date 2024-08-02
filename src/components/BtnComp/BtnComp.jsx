@@ -13,7 +13,7 @@ export default function BtnComp({ nombre, color, src }) {
   return (
     <>
     <button className="btn-comp" style={estiloBotonNav} onClick={handleClick}>
-      {src ? <img src={src} alt={nombre} width={36} className="btn-image" /> : nombre}
+      {src ? <img src={src} alt={nombre} width={48} className="btn-image" /> : nombre}
     </button>
     </>
   );

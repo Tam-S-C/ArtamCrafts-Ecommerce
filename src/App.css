@@ -5,8 +5,7 @@
 }
 
 .contenedorTotal {
-  min-height: 92dvh;
+  min-height: 90dvh;
   display: grid;
-  grid-template-rows: auto 1fr auto;
-  margin: 5px;
+  grid-template-rows: auto auto 1fr auto;
 }

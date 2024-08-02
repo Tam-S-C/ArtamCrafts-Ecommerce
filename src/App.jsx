@@ -7,11 +7,12 @@ import NavBar from './components/NavBar/NavBar';
 function App() {
   return (
     <>
-    <div className='contenedorTotal'>
-      <NavBar />
-      <ItemListContainer greeting='Bienvenidos a ArTamCrafts - Web en construcción, disculpa las moslestias.'/>
-      <FooterBar />
-    </div>
+      <div className='contenedorTotal'>
+        <NavBar />
+        <ItemListContainer greeting='Bienvenidos a ArTamCrafts 
+        - Web en construcción, disculpe las moslestias.'/>
+        <FooterBar />
+      </div>
     </>
   );
 }

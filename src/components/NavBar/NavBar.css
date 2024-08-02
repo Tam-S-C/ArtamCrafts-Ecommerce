@@ -1,8 +1,19 @@
-.barraNavegacion {
+.barraNavegacion, header {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: center;
     gap: 8px;
     margin: 5px;
+    max-height:3em;
+    padding: 2px;
+  }
+
+  input {
+    height: 24px;
+    border-radius: 16px;
+    border: none;
+    background-color: rgb(143, 255, 218);
+    color:black;
   }
   
