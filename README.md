@@ -14,8 +14,9 @@
 > [!NOTE]
 > Pre-Entrega 1
 
-- [x] Componente NavBar (Logo + botones de categorías).
+- [x] Componente Header (Logo + Buscador + CartWidget + botones extras).
 - [x] Componente CartWidget (con ícono y nº hardcodeado).
+- [x] Componente NavBar (Botones de categorías/productos).
 - [x] Componente contenedor ItemListContainer.jsx con una prop greeting.
 - [x] Componente FooterBar (extra).  
 
