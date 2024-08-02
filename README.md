@@ -14,22 +14,23 @@
 > [!NOTE]
 > Pre-Entrega 1
 
-- [x] Componente Header (Logo + Buscador + CartWidget + botones extras).
-- [x] Componente CartWidget (con ícono y nº hardcodeado).
+- [x] Componente Header (extra) (Logo + Buscador + botones extras).
 - [x] Componente NavBar (Botones de categorías/productos).
+- [x] Componente CartWidget (con ícono y nº hardcodeado - dentro de NavBar).
 - [x] Componente contenedor ItemListContainer.jsx con una prop greeting.
-- [x] Componente FooterBar (extra).  
+- [x] Componente FooterBar (extra). 
+- [x] Uso de Boostrap en íconos carrito y sesión. 
 
 
 
 
 
 --------------
+
 # React + Vite
 
 <h6>This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh</h6>
