@@ -22,3 +22,7 @@ button {
   button:focus-visible {
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
   }
+
+.btn-image{
+  padding-top: 5px;
+}
