@@ -9,7 +9,7 @@ export default function HeaderComp() {
     <>
       <header>
         <BtnComp src={logo} nombre="Inicio" color="#4ed9b9"/>
-        <input className='inputEstilo' placeholder=' Escribe tu búsqueda...🔍'></input>
+        <input className='inputEstilo' type="text" placeholder=' Escribe tu búsqueda...🔍'></input>
         <BtnComp nombre="Ayuda" color="#4ed9b9" />
         <BtnComp nombre="Iniciar Sesión" color="#4ed9b9" src={person} />
       </header>
