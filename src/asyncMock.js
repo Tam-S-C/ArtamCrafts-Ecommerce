@@ -14,6 +14,7 @@ const products = [
       descripcion: 'Podrás elegir entre agenda perpetua o anotador A5 o A6',
       imagen: agendaFriends,
     },
+    
     {
       id: 2,
       titulo: 'Agenda/Anotador BttF',
@@ -22,6 +23,7 @@ const products = [
       descripcion: 'Podrás elegir entre agenda perpetua o anotador A5 o A6',
       imagen: agendaBttF,
     },
+
     {
       id: 3,
       titulo: 'Stickers Modelo: Friends',
@@ -30,6 +32,7 @@ const products = [
       descripcion: 'Stickers troquelados a prueba de agua',
       imagen: stickersFriends,
     },
+
     {
       id: 4,
       titulo: 'Stickers Modelo: BttF',
@@ -38,6 +41,7 @@ const products = [
       descripcion: 'Stickers troquelados a prueba de agua',
       imagen: stickersBttF,
     },
+
     {
       id: 5,
       titulo: 'Stationary Box - BttF',
@@ -46,6 +50,7 @@ const products = [
       descripcion: 'Caja de papelería con 10 ítems!',
       imagen: boxBttF,
     },
+
     {
       id: 6,
       titulo: 'Stationary Box - Friends',
@@ -54,6 +59,9 @@ const products = [
       descripcion: 'Caja de papelería con 10 ítems!',
       imagen: boxFriends,
     },
+
+    
+
   ];
   
   export const getProducts = new Promise((resolve) => {

@@ -1,8 +1,8 @@
 import React from 'react';
-import './ItemListContainer.css';
 import { getProducts } from '../../asyncMock.js';
 import { useEffect, useState } from 'react';
 import ItemsCard from './ItemsCard';
+import './ItemsCard.css';
 
 export default function ItemsComp() {
   const [products, setProducts] = useState([]);
@@ -14,10 +14,8 @@ export default function ItemsComp() {
   return (
     <>
       <hr/>
-      <br/>
       <h2>Todos los Productos</h2>
-      <br/>
-        <section className="contenedorProds">
+        <section>
           {products.map((item) => (
             <ItemsCard
               titulo={item.titulo}
