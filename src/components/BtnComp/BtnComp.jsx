@@ -6,13 +6,10 @@ export default function BtnComp({ nombre, color, src, }) {
     backgroundColor: color,
   };
 
-  const handleClick = () => {
-    alert(`Estás en la sección de ${nombre}`);
-  };
 
   return (
     <>
-      <button className="btn-componente" style={estiloBotonNav} onClick={handleClick}>
+      <button className="btn-componente" style={estiloBotonNav}>
         {src ? <img src={src} alt={nombre} /> : nombre}
       </button>
     </>

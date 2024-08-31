@@ -2,8 +2,11 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { getProduct } from '../../asyncMock.js';
 import './ItemDetailContainer.css';
+import ItemCount from "../ContadorComp/ItemCount.jsx";
+
 
 export default function ItemDetailContainer() {
+
   const [product, setProduct] = useState({});
   const { itemId } = useParams();
 
@@ -13,6 +16,7 @@ export default function ItemDetailContainer() {
 
   return (
     <>
+    <hr/>
     <div className='contenedorCards'>
       <article className="card">
         <h5>
@@ -23,8 +27,12 @@ export default function ItemDetailContainer() {
         <h6>Precio: ${product.precio}</h6>
         <p>{product.descripcion}</p>
         <p>Categoría: {product.categoria}</p>
+        <ItemCount />
       </article>
     </div>
     </>
   );
 }
+
+
+
