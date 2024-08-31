@@ -1,7 +1,7 @@
 import React from 'react';
 import './BtnComp.css';
 
-export default function BtnComp({ nombre, color, src }) {
+export default function BtnComp({ nombre, color, src, }) {
   const estiloBotonNav = {
     backgroundColor: color,
   };

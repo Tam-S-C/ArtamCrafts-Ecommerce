@@ -1,6 +1,5 @@
 :root {
   font-family:Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  line-height: 1;
   font-weight: 200;
 
   color-scheme: light dark;
@@ -21,12 +20,11 @@ body {
 
 h1 {
   font-size: 3.2em;
-  line-height: 1.1;
+  line-height: 1;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #147461;
     background-color: #ffffff;
   }
 }

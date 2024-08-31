@@ -3,15 +3,27 @@ import BtnComp from '../BtnComp/BtnComp.jsx';
 import logo from '/Logo.png';
 import './HeaderComp.css';
 import person from '/person-circle.svg';
+import { Link } from 'react-router-dom';
+
 
 export default function HeaderComp() {
   return (
     <>
       <header>
-        <BtnComp src={logo} nombre="Inicio" color="#4ed9b9"/>
+
+        <Link to={'/'}>
+          <BtnComp src={logo} nombre="Home" color="#4ed9b9" />
+        </Link>
+
         <input className='inputEstilo' placeholder=' Escribe tu búsqueda...🔍'></input>
-        <BtnComp nombre="Ayuda" color="#4ed9b9" />
-        <BtnComp nombre="Iniciar Sesión" color="#4ed9b9" src={person} />
+
+        <Link to={'/contact'}>
+          <BtnComp nombre="Contacto" color="#4ed9b9" />
+        </Link>
+
+        <Link to={'/sesion'}>
+          <BtnComp nombre="Iniciar Sesión" color="#4ed9b9" src={person} />
+        </Link>
       </header>
     </>
   );
