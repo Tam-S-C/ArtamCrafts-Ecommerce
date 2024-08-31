@@ -26,10 +26,12 @@
 > Pre-Entrega 2
 
 - [x] Uso de React-router-dom.
-- [x] Componentes Navbar con cart y diferentes caterogías de productos.
+- [x] Se quitó los alert al darle click a los botones.
+- [x] Se crearon las cards de los productos con su contador.
+- [x] Componente Navbar con cart y diferentes caterogías de productos.
 - [x] Home con las cards de todos los productos y Brand/Logo con link al home con path='/'
 - [x] Link al detalle de cada uno de los productos
-- [x] Integrar los parámetros de async-mocks utilizando efects y hooks.
+- [x] Integración con parámetros de async-mocks utilizando efects y hooks.
 
 
 --------------

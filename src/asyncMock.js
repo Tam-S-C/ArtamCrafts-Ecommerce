@@ -38,9 +38,13 @@ const products = [
   export const getProduct = (id) => {
     return products.find((item) => item.id == id);
   };
-  
 //Filtrado por categoría
   
-  export const getCategoria = (categoria) => {
-    return products.filter((producto) => producto.categoria === categoria);
-  };
+export const getCategoria = (categoria) => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      const productosFiltrados = products.filter((producto) => producto.categoria === categoria);
+      resolve(productosFiltrados);
+    }, 1000);
+  });
+};
