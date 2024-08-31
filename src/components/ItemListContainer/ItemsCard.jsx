@@ -4,14 +4,16 @@ import { Link } from 'react-router-dom';
 export default function ItemsCard({ titulo, precio, imagen, id }) {
   return (
     <>
-      <article className="carta">
+    <div className='contenedorCards'>
+      <article className="card">
         <h5>{titulo}</h5>
         <img src={imagen} alt={titulo} width={200}/>
-        <h6>${precio}</h6>
+        <h6>Precio: ${precio}</h6>
         <button className='btnDetalles'>
-          <Link to={`/ItemDetailContainer/${id}`}>Ver detalles</Link>
+          <Link to={`/item/${id}`}>Ver detalles</Link>
         </button>
       </article>
+    </div>
     </>
   );
 }

@@ -18,12 +18,12 @@ export default function ItemsComp() {
       <h2>Todos los Productos</h2>
       <br/>
         <section className="contenedorProds">
-          {products.map((prod) => (
+          {products.map((item) => (
             <ItemsCard
-              titulo={prod.titulo}
-              precio={prod.precio}
-              imagen={prod.imagen}
-              id={prod.id}
+              titulo={item.titulo}
+              precio={item.precio}
+              imagen={item.imagen}
+              id={item.id}
             />
           ))}
         </section>

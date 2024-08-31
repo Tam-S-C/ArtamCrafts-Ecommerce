@@ -1,13 +1,30 @@
-.carta {
+.contenedorCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  gap: 1rem;
+  width: 100%; 
+  box-sizing: border-box; 
+}
+
+.card {
     border: 2px solid rgb(143, 255, 218);
     border-radius: 16px;
     padding: 10px;
-    margin: 1rem;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
-    display: inline-block;
-    max-width: 100%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);;
+    display: inline-flex;
+    max-width: 300px; 
+    width: 100%; 
     box-sizing: border-box;
+    text-align: center;
+    margin: 1rem;
   }
+
+  .card img {
+    margin: 0 auto; 
+    max-width: 100%;
+    border-radius: 8px; 
+}
 
   .btnDetalles {
     background-color: rgb(143, 255, 218);
@@ -20,11 +37,16 @@
     cursor: pointer;
     transition: border-color 0.5s;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    display: block;
+    margin: 0 auto;
+    max-width: 90%;
+    height: auto;
   }
 
   .btnDetalles a {
     text-decoration: none;
     color:black;
+    display: inline-block;
   }
   
   .btnDetalles:hover {

@@ -36,11 +36,11 @@ const products = [
   });
   
   export const getProduct = (id) => {
-    return products.find((prod) => prod.id == id);
+    return products.find((item) => item.id == id);
   };
   
 //Filtrado por categoría
   
   export const getCategoria = (categoria) => {
-    return products.filter((product) => product.categoria === categoria);
+    return products.filter((producto) => producto.categoria === categoria);
   };
