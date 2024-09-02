@@ -30,6 +30,7 @@ function App() {
             <Route exact path="/agendasyanotadores" element={<AgAnComp />}/>
             <Route exact path="/stickers" element={<StickersComp />}/>
             <Route exact path="/stationaryBox" element={<BoxComp />}/>
+            <Route exact path="/:category/:itemId" element={<ItemDetailContainer />} />
             <Route exact path="/item/:itemId" element={<ItemDetailContainer />} />
           </Routes>
 

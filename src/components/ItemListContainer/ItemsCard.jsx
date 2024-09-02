@@ -1,7 +1,7 @@
 import './ItemsCard.css';
 import { Link } from 'react-router-dom';
 
-export default function ItemsCard({ titulo, precio, imagen, id }) {
+export default function ItemsCard({ titulo, precio, imagen, id, categoria }) {
   return (
     <>
         <div className='contCards'>
@@ -11,7 +11,7 @@ export default function ItemsCard({ titulo, precio, imagen, id }) {
             <br/>
             <h6>Precio: ${precio}</h6>
             <button className='btnDetalles'>
-              <Link to={`/item/${id}`}>Ver detalles</Link>
+            <Link to={`/${categoria}/${id}`}>Ver detalles</Link>
             </button>
           </article>
         </div>
