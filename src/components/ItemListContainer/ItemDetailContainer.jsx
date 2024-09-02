@@ -13,10 +13,8 @@ export default function ItemDetailContainer() {
 
   useEffect(() => {
     setProduct(getProduct(itemId));
-  }, []);
-  
-  
-  
+  }, []); 
+
 
   return (
     <>
@@ -26,11 +24,13 @@ export default function ItemDetailContainer() {
         <h5>
           {product.id} - {product.titulo}
         </h5>
+
         <img src={product.imagen} alt={product.titulo} width={220} className='zoom' />
         <br/>
+
         <h6>Precio: ${product.precio}</h6>
         <p>{product.descripcion}</p>
-        <p>Categoría: {product.categoria}</p>
+        
         <ItemCount />
       </article>
     </div>

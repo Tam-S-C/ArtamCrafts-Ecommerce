@@ -5,13 +5,8 @@ import NavBar from './components/NavBar/NavBar';
 import HeaderComp from './components/HeaderComp/HeaderComp';
 import ContactComp from './components/HeaderComp/ContactComp';
 import SesionComp from './components/HeaderComp/SesionComp';
-import AgAnComp from './components/NavBar/AgAnComp';
-import StickersComp from './components/NavBar/StickersComp';
-import BoxComp from './components/NavBar/BoxComp';
 import ItemDetailContainer from './components/ItemListContainer/ItemDetailContainer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-
-
 
 
 function App() {
@@ -27,11 +22,10 @@ function App() {
             <Route exact path="" element={<ItemListContainer />}/>
             <Route exact path="/contact" element={<ContactComp />}/>
             <Route exact path="/sesion" element={<SesionComp />}/>
-            <Route exact path="/agendasyanotadores" element={<AgAnComp />}/>
-            <Route exact path="/stickers" element={<StickersComp />}/>
-            <Route exact path="/stationaryBox" element={<BoxComp />}/>
-            <Route exact path="/:category/:itemId" element={<ItemDetailContainer />} />
+            <Route exact path="/:category" element={<ItemListContainer />}/>
             <Route exact path="/item/:itemId" element={<ItemDetailContainer />} />
+            <Route exact path="/:category/:itemId" element={<ItemDetailContainer />} />
+
           </Routes>
 
           <FooterBar />
