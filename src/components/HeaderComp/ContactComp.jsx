@@ -6,7 +6,7 @@ export default function ContactComp() {
       <>
         <main>
           <hr></hr>
-          <br></br>
+          <br/><br/>
           <h2 style={{fontFamily:"monospace"}}>CONTACTO</h2>
           <h3>🚧 Sección en construcción 🚧</h3>
           <p>Disculpe las molestias.</p>
