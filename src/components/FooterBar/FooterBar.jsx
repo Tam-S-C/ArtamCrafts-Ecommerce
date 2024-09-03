@@ -10,7 +10,7 @@ export default function FooterBar() {
         <hr/>
         <p>ArTamCrafts® Copyrights 2019-2029 </p>
         <p style={{fontWeight:"bold", fontFamily:"monospace", fontSize:14}}>By Tamara S. Canzobre - Realizado con React.js <img src={imgReact} width={16}/></p>
-        <div className='iconosFooter'>
+     {/*    <div className='iconosFooter'>
           <a href="https://www.instagram.com/artamcrafts/" target="_blank">
             <img src="../src/assets/Icono_Instagram.png" width={24} alt="Link de Instagram"/>
           </a>
@@ -35,7 +35,7 @@ export default function FooterBar() {
             <img src="../src/assets/Icono_mail.png" width={24} alt="Link del mail"/>
           </a>
 
-        </div>
+        </div> */}
       
       
       </footer>
