@@ -1,44 +1,47 @@
-import React from 'react';
 import './FooterBar.css';
-import imgReact from '/src/assets/react.svg';
+import imgReact from '../../assets/react.svg';
+import instaIcon from '../../assets/Icono_Instagram.png';
+import behanceIcon from '../../assets/Icono_Behance.png';
+import youtubeIcon from '../../assets/Icono_YouTube.png';
+import linkedinIcon from '../../assets/Icono_Linkedin.png';
+import githubIcon from '../../assets/Icono_GitHub.png';
+import mailIcon from '../../assets/Icono_mail.png';
 
 export default function FooterBar() {
-  return (
-    <>
-      <footer>
+    return (
+        <>
+            <footer>
+                <hr />
+                <p>ArTamCrafts® Copyrights 2019-2029 </p>
+                <p style={{ fontWeight: "bold", fontFamily: "monospace", fontSize: 14 }}>
+                    By Tamara S. Canzobre - Realizado con React.js <img src={imgReact} width={16} />
+                </p>
+                <div className='iconosFooter'>
+                    <a href="https://www.instagram.com/artamcrafts/" target="_blank" rel="noopener noreferrer">
+                        <img src={instaIcon} width={24} alt="Link de Instagram" />
+                    </a>
 
-        <hr/>
-        <p>ArTamCrafts® Copyrights 2019-2029 </p>
-        <p style={{fontWeight:"bold", fontFamily:"monospace", fontSize:14}}>By Tamara S. Canzobre - Realizado con React.js <img src={imgReact} width={16}/></p>
-     {/*    <div className='iconosFooter'>
-          <a href="https://www.instagram.com/artamcrafts/" target="_blank">
-            <img src="../src/assets/Icono_Instagram.png" width={24} alt="Link de Instagram"/>
-          </a>
+                    <a href="https://www.behance.net/tamaracanzobre" target="_blank" rel="noopener noreferrer">
+                        <img src={behanceIcon} width={24} alt="Link de Behance" />
+                    </a>
 
-          <a href="https://www.behance.net/tamaracanzobre" target="_blank">
-            <img src="../src/assets/Icono_Behance.png" width={24} alt="Link de Behance"/>
-          </a>
+                    <a href="https://www.youtube.com/@artamcrafts" target="_blank" rel="noopener noreferrer">
+                        <img src={youtubeIcon} width={24} alt="Link de YouTube" />
+                    </a>
 
-          <a href="https://www.youtube.com/@artamcrafts" target="_blank">
-            <img src="../src/assets/Icono_Youtube.png" width={24} alt="Link de Youtube"/>
-          </a>
+                    <a href="https://www.linkedin.com/in/tamara-canzobre/" target="_blank" rel="noopener noreferrer">
+                        <img src={linkedinIcon} width={24} alt="Link de LinkedIn" />
+                    </a>
 
-          <a href="https://www.linkedin.com/in/tamara-canzobre/" target="_blank">
-            <img src="../src/assets/Icono_Linkedin.png" width={24} alt="Link de LinkedIn"/>
-          </a>
+                    <a href="https://github.com/Tam-S-C" target="_blank" rel="noopener noreferrer">
+                        <img src={githubIcon} width={24} alt="Link a GitHub" />
+                    </a>
 
-          <a href="https://github.com/Tam-S-C" target="_blank">
-            <img src="../src/assets/Icono_GitHub.png" width={24} alt="Link a GitHub"/>
-          </a>
-
-          <a href="mailto:artamcrafts@hotmail.com" target="_blank">
-            <img src="../src/assets/Icono_mail.png" width={24} alt="Link del mail"/>
-          </a>
-
-        </div> */}
-      
-      
-      </footer>
-    </>
-  );
+                    <a href="mailto:artamcrafts@hotmail.com" target="_blank" rel="noopener noreferrer">
+                        <img src={mailIcon} width={24} alt="Link del mail" />
+                    </a>
+                </div>
+            </footer>
+        </>
+    );
 }
