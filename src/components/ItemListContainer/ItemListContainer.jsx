@@ -23,7 +23,7 @@ export default function ItemsComp() {
     <>
       <hr />
       <h2>{CATEGORIES[category]?.nombre}</h2>
-      <section>
+      <section className='centrarCards'>
         {products.map((item) => (
           <ItemsCard 
             key={item.id} 

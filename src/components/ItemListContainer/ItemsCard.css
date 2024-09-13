@@ -80,3 +80,33 @@ button {
 button:focus {
   outline: none;
 }
+
+.centrarCards {
+  display: grid;
+  margin: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@media (max-width: 1300px){
+  .centrarCards {
+    display: grid;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 1000px){
+  .centrarCards {
+    display: grid;
+    margin: auto;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 700px){
+  .centrarCards {
+    display: grid;
+    margin: auto;
+    grid-template-columns: 1fr;
+  }
+}

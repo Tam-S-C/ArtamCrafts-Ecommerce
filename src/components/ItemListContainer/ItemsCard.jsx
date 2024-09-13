@@ -26,7 +26,7 @@ export default function ItemsCard({ titulo, precio, imagen, id, category }) {
     <>
         <div className='contCards'>
           <article className='card'>
-            <h5>{titulo}</h5>
+            <h6>{titulo}</h6>
             <img src={imagen} alt={titulo} width={200}/>
             <br/>
 
