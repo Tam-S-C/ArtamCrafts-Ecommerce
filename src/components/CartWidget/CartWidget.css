@@ -1,3 +1,15 @@
 .cartEstilo {
     width: 28px;
 }
+
+
+.cartNumerito {
+    color: black;                
+    font-weight: bold;            
+    background-color: aquamarine;   
+    border-radius: 50%;          
+    padding: 8px 15px;            
+    text-decoration: none;       
+    display: inline-block;
+    margin-left: 8px;  
+  }

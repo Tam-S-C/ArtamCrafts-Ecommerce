@@ -12,7 +12,7 @@ header {
 .inputEstilo {
     height: 28px;
     width: 190px;
-    border-radius: 16px;
+    border-radius: 8px;
     border: none;
     background-color: rgb(143, 255, 218);
     color:black;

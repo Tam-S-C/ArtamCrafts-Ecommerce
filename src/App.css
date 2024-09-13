@@ -9,3 +9,12 @@
   display: grid;
   grid-template-rows: auto auto auto auto;
 }
+
+input {
+  background-color: aquamarine;
+  padding-left: 4px;
+  border-radius: 8px;
+  border-color: aquamarine;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.4);
+  color: black;
+}

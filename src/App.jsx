@@ -7,11 +7,14 @@ import ContactComp from './components/HeaderComp/ContactComp';
 import SesionComp from './components/HeaderComp/SesionComp';
 import ItemDetailContainer from './components/ItemListContainer/ItemDetailContainer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { CartProvider } from './components/context/CartContext';
+import CartView from './components/CarritoComp/CartView';
 
 
 function App() {
   return (
     <>
+    <CartProvider>
       <BrowserRouter basename="/ArtamCrafts-Ecommerce">
 
         <div className='contenedorTotal'>
@@ -25,7 +28,7 @@ function App() {
             <Route exact path="/:category" element={<ItemListContainer />}/>
             <Route exact path="/item/:itemId" element={<ItemDetailContainer />} />
             <Route exact path="/:category/:itemId" element={<ItemDetailContainer />} />
-
+            <Route exact path='/cart' element={<CartView />} />
           </Routes>
 
           <FooterBar />
@@ -34,6 +37,7 @@ function App() {
     
 
       </BrowserRouter>
+    </CartProvider>
     </>
   );
 }

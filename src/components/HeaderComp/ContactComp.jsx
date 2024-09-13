@@ -10,6 +10,10 @@ export default function ContactComp() {
           <h2 style={{fontFamily:"monospace"}}>CONTACTO</h2>
           <h3>🚧 Sección en construcción 🚧</h3>
           <p>Disculpe las molestias.</p>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
         </main>
       </>
     );
