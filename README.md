@@ -14,17 +14,26 @@
 * Tutor Adjunto: Dario Rodriguez
 
 > [!NOTE]
-> Pre-Entrega 1
+> ENTREGA FINAL
 
-- [x] Componente Header (extra) (Logo + Buscador + botones extras).
-- [x] Componente NavBar (Botones de categorías/productos).
-- [x] Componente CartWidget (con ícono y nº hardcodeado - dentro de NavBar).
-- [x] Componente contenedor ItemListContainer.jsx con una prop greeting.
-- [x] Componente FooterBar (extra). 
-- [x] Uso de Boostrap en íconos carrito y sesión. 
+- [x] Navbar
+- [x] Catálogo
+- [x] Detalle de producto
+- [x] CartContext
+- [x] CartWidget
+- [x] ItemList
+- [x] ItemDetailContainer
+- [x] ItemDetail
+    *   ItemQuantitySelector
+    *   Description
+    *   AddItemButton
+- [x] Checkout
+    *   Brief (detalle de compra)
+
+
 
 > [!NOTE]
-> Pre-Entrega 2
+> Pre-Entrega 2 => 100%
 
 - [x] Uso de React-router-dom.
 - [x] Se quitó los alert al darle click a los botones.
@@ -34,7 +43,19 @@
 - [x] Link al detalle de cada uno de los productos
 - [x] Integración con parámetros de async-mocks utilizando efects y hooks.
 
---------------
+
+> [!NOTE]
+> Pre-Entrega 1 => 100%
+
+- [x] Componente Header (extra) (Logo + Buscador + botones extras).
+- [x] Componente NavBar (Botones de categorías/productos).
+- [x] Componente CartWidget (con ícono y nº hardcodeado - dentro de NavBar).
+- [x] Componente contenedor ItemListContainer.jsx con una prop greeting.
+- [x] Componente FooterBar (extra). 
+- [x] Uso de Boostrap en íconos carrito y sesión. 
+
+
+---------
 
 <h3>React + Vite</h3> 
 

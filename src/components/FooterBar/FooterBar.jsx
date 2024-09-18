@@ -1,11 +1,11 @@
 import './FooterBar.css';
 import imgReact from '../../assets/react.svg';
-import instaIcon from '../../assets/Icono_Instagram.png';
-import behanceIcon from '../../assets/Icono_Behance.png';
-import youtubeIcon from '../../assets/Icono_YouTube.png';
-import linkedinIcon from '../../assets/Icono_Linkedin.png';
-import githubIcon from '../../assets/Icono_GitHub.png';
-import mailIcon from '../../assets/Icono_mail.png';
+import instaIcon from '../../assets/imgIcons/Icono_Instagram.png';
+import behanceIcon from '../../assets/imgIcons/Icono_Behance.png';
+import youtubeIcon from '../../assets/imgIcons/Icono_YouTube.png';
+import linkedinIcon from '../../assets/imgIcons/Icono_Linkedin.png';
+import githubIcon from '../../assets/imgIcons/Icono_GitHub.png';
+import mailIcon from '../../assets/imgIcons/Icono_mail.png';
 
 export default function FooterBar() {
     return (

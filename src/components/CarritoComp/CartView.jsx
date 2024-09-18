@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import { CartContext } from '../context/CartContext';
-import UserInfo from '../UserInfo';
+import UserInfo from './UserInfo';
 
 export default function CartView() {
   const {cart,createNewOrder} = useContext(CartContext);

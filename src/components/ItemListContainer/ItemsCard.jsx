@@ -1,8 +1,8 @@
 import './ItemsCard.css';
 import { Link } from 'react-router-dom';
-import likeOFF from '../../assets/likeOFF.png';
-import likeON from '../../assets/likeON.png';
-import { useState, useEffect } from 'react';
+import likeOFF from '../../assets/imgLike/likeOFF.png';
+import likeON from '../../assets/imgLike/likeON.png';
+import { useState } from 'react';
 
 export default function ItemsCard({ titulo, precio, imagen, id, category }) {
 

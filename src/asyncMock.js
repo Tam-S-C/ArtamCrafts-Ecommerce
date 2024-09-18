@@ -1,15 +1,15 @@
-import agendaFriends from './assets/agAnFriends.jpg';
-import stickersFriends from './assets/stickersFriends.jpg';
-import boxFriends from './assets/boxFriends.jpg';
-import agendaBttF from './assets/agAnBttF.jpg';
-import stickersBttF from './assets/stickersBttF.jpg';
-import boxBttF from './assets/boxBttF.jpg';
-import boxAlicia from './assets/boxAlicia.jpg';
-import agendaStrangerT from './assets/agAnST.jpg';
-import boxStitch from './assets/boxStitch.jpg';
-import stickersHP from './assets/stickersHP.jpg';
-import stickersStitch from './assets/stickersStitch.jpg';
-import agendaJack from './assets/agAnJack.jpg';
+import agendaFriends from './assets/imgProducts/agAnFriends.jpg';
+import stickersFriends from './assets/imgProducts/stickersFriends.jpg';
+import boxFriends from './assets/imgProducts/boxFriends.jpg';
+import agendaBttF from './assets/imgProducts/agAnBttF.jpg';
+import stickersBttF from './assets/imgProducts/stickersBttF.jpg';
+import boxBttF from './assets/imgProducts/boxBttF.jpg';
+import boxAlicia from './assets/imgProducts/boxAlicia.jpg';
+import agendaStrangerT from './assets/imgProducts/agAnST.jpg';
+import boxStitch from './assets/imgProducts/boxStitch.jpg';
+import stickersHP from './assets/imgProducts/stickersHP.jpg';
+import stickersStitch from './assets/imgProducts/stickersStitch.jpg';
+import agendaJack from './assets/imgProducts/agAnJack.jpg';
 
 import { CATEGORIES } from './components/NavBar/NavBar';
 
