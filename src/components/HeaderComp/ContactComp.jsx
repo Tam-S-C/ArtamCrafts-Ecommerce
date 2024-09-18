@@ -72,7 +72,7 @@ export default function ContactComp() {
               required
             />
             <br /><br />
-            <label htmlFor="comentario">Comentarios:</label>
+            <label className="entradas" htmlFor="comentario">Comentarios:</label>
             <br />
             <textarea
               name="comentario"
