@@ -34,7 +34,6 @@
 - [x] Link al detalle de cada uno de los productos
 - [x] Integración con parámetros de async-mocks utilizando efects y hooks.
 
-
 --------------
 
 <h3>React + Vite</h3> 
