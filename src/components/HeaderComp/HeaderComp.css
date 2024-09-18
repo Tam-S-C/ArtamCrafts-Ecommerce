@@ -14,7 +14,7 @@ header {
     width: 190px;
     border-radius: 16px;
     border: none;
-    background-color: rgb(143, 255, 218);
+    background-color: rgba(127, 255, 212, 0.549);
     color:black;
     box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.4);
 }

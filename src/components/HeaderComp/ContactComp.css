@@ -2,13 +2,14 @@
   resize: vertical;
   min-height: 10px;
   height: 150px;
-  background-color: aquamarine;
+  background-color: rgba(127, 255, 212, 0.549);
   border-width: 5px;
   box-shadow: 3px 3px 3px #2727279b;
   color: black;
 }
 
 input, textarea {
+    background-color: rgba(127, 255, 212, 0.549);
     border: none;
     width: 50%;
     box-shadow: 3px 3px 3px #6262626e;
