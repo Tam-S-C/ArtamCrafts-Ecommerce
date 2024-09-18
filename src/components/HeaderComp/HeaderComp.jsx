@@ -12,7 +12,7 @@ export default function HeaderComp() {
       <header>
 
         <Link to={'/'}>
-          <BtnComp src={logo} nombre="Home" color="#4ed9b9" />
+          <BtnComp src={logo} nombre="Home" color="#4ed9b9" className='imgLogo' />
         </Link>
 
         <input className='inputEstilo' placeholder=' Escribe tu búsqueda...🔍'></input>

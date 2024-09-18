@@ -1,7 +1,7 @@
 import React from 'react';
 import './BtnComp.css';
 
-export default function BtnComp({ nombre, color, src, }) {
+export default function BtnComp({ nombre, color, src, className}) {
   const estiloBotonNav = {
     backgroundColor: color,
   };
@@ -9,7 +9,7 @@ export default function BtnComp({ nombre, color, src, }) {
 
   return (
     <>
-      <button className="btn-componente" style={estiloBotonNav}>
+      <button className={`btn-componente ${className}`} style={estiloBotonNav}>
         {src ? <img src={src} alt={nombre} /> : nombre}
       </button>
     </>

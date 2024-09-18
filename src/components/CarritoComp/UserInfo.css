@@ -1,3 +1,21 @@
+.containerCarrito {
+  display: grid;
+  width: 90%;
+  gap: 8px;
+  margin: auto;
+}
+
+.formulario {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: auto;
+  gap: 16px;
+}
+
+input {
+  width: 200px;
+}
+
 .mail {
     border: 2px solid transparent;
     padding: 0 0.2em;
@@ -13,39 +31,20 @@
     color:black;
   }
 
-.formulario {
-  display: grid;
-  width: 48%;
-  gap: 20px;
-  margin: auto;
-}
 
-.botonContacto {
-  background: #D7D7ED;
-  color: black;
-  padding: 5px;
-  border-radius: 15px;
-  margin: 0px 10px 0px 0px;
-  box-shadow: 3px 3px 0px #E885B0;
-}
+@media (max-width: 700px) {
 
-#nombre, #email, #comentario, #apellido {
-  border-radius: 10px;
-  border-color: #D7D7ED;
-}
+  .containerCarrito {
+    display: grid;
+    width: 70%;
+    gap: 8px;
+    margin: auto;
+  }
 
-.botonContacto:hover{
-  background: #E885B0;
-  color: white;
-  font-weight: 500;
-  transition: 0.5s;
-}
-
-#comentario {
-  resize: vertical;
-  min-height: 30px;
-  background-color: aquamarine;
-  border-width: 5px;
-  box-shadow: 3px 3px 0px #81818114;
-  color: black;
+  .formulario {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: auto;
+    gap: 16px;
+  }
 }

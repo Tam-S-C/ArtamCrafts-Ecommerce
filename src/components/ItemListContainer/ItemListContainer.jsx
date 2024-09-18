@@ -22,6 +22,7 @@ export default function ItemsComp() {
   return (
     <>
       <hr />
+      <br />
       <h2>{CATEGORIES[category]?.nombre}</h2>
       <section className='centrarCards'>
         {products.map((item) => (

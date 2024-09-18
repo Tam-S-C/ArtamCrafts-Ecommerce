@@ -4,7 +4,7 @@ header {
     justify-content: center;
     align-items: center;
     gap: 16px;
-    margin: 5px 0 15px 0;
+    margin: 6px 0 15px 0;
     max-height:3em;
     padding: 2px;
   }
@@ -12,7 +12,7 @@ header {
 .inputEstilo {
     height: 28px;
     width: 190px;
-    border-radius: 8px;
+    border-radius: 16px;
     border: none;
     background-color: rgb(143, 255, 218);
     color:black;
@@ -23,3 +23,21 @@ header {
       box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
     }
   
+@media (max-width: 650px) {
+
+  header {
+    font-size: small;
+    margin: 6px 0 8px 0;
+  }
+
+  .inputEstilo {
+    height: 28px;
+    width: 130px;
+    font-size: smaller;
+  }
+
+  .imgLogo img{
+    width: 32px;
+  }
+  
+}

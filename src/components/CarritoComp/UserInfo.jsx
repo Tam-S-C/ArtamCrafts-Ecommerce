@@ -4,11 +4,13 @@ import './UserInfo.css';
 const UserInfo = ({carrito,createNewOrder}) => {
     const[nombre,setNombre] = useState('');
     const[apellido,setApellido] = useState('');
+    const[dni,setDni] = useState('');
     const[email,setEmail] = useState('');
     const[telefono,setTelefono] = useState('');
     const[direccion,setDireccion] = useState('');
+    const[localidad,setLocalidad] = useState('');
     const[cp,setCP] = useState('');
-    const[dni,setDni] = useState('');
+    
 
     const handleSubmit = () =>{
         const order = {
@@ -19,6 +21,7 @@ const UserInfo = ({carrito,createNewOrder}) => {
                 email,
                 telefono,
                 direccion,
+                localidad,
                 cp,
             },
             items: carrito,
@@ -29,8 +32,8 @@ const UserInfo = ({carrito,createNewOrder}) => {
     }
 
     return (
-        <div>
-            <h4>Completa los siguientes datos para finalizar la compra:</h4>
+        <div className='containerCarrito'>
+            <h5>Completa los siguientes datos para finalizar la compra:</h5>
                 <br/>
             <div className='formulario'>
                 <input type='text' placeholder='Nombre' value={nombre} onChange={(e) => setNombre(e.target.value)} required/>
@@ -39,9 +42,10 @@ const UserInfo = ({carrito,createNewOrder}) => {
                 <input type='text' placeholder='Email' value={email} onChange={(e) => setEmail(e.target.value)} required/>
                 <input type='text' placeholder='Teléfono' value={telefono} onChange={(e) => setTelefono(e.target.value)} required/>
                 <input type='text' placeholder='Dirección' value={direccion} onChange={(e) => setDireccion(e.target.value)} required/>
+                <input type='text' placeholder='Localidad' value={cp} onChange={(e) => setLocalidad(e.target.value)} required/>
                 <input type='text' placeholder='Código Postal' value={cp} onChange={(e) => setCP(e.target.value)} required/>
             </div>
-            <br/><br/>
+            <br/>
             <div>
                 <h5>Datos para realizar la transferencia:</h5>
                 <p>CVU: 0000003100001777492223 <p>Alias: ArtamCrafts</p></p>

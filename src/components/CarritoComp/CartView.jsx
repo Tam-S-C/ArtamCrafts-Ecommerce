@@ -8,6 +8,7 @@ export default function CartView() {
   return (
     <>
       <hr/>
+      <br />
       <h3>Carrito</h3>
       {cart.length === 0 ? (
         <p>Tu carrito se encuentra vacío 🛒</p>

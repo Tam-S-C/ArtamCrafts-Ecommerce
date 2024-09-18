@@ -10,3 +10,19 @@
   }
 
 
+  @media (max-width: 650px) {
+    .barraNavegacion {
+      padding: 16px;
+      gap: 8px;
+      font-size: small;
+    }
+  }
+
+  @media (max-width: 420px) {
+    .barraNavegacion {
+      margin: 100px 0 16px 0;
+      padding: 16px;
+      gap: 8px;
+      font-size: small;
+    }
+  }
