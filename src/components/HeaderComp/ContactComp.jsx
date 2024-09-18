@@ -1,14 +1,13 @@
 import React from 'react';
 import Swal from 'sweetalert2';
-import '../CarritoComp/UserInfo.css';
+import './ContactComp.css';
 
 export default function ContactComp() {
 
-  // Función para enviar el formulario de contacto
   const enviarFormulario = (event) => {
-    event.preventDefault(); // Previene el comportamiento por defecto del formulario
+    event.preventDefault();
 
-    // Mostrar un mensaje de éxito usando SweetAlert2
+    // SweetAlert2
     Swal.fire({
       icon: 'success',
       title: '¡Mensaje enviado con éxito!',
@@ -21,14 +20,12 @@ export default function ContactComp() {
       confirmButtonText: 'Salir'
     });
 
-    // Restablecer el formulario luego de enviarlo
     event.target.reset();
   }
 
   return (
     <main>
       <hr />
-      <br />
       <br />
       <h2 style={{ fontFamily: 'monospace' }}>CONTACTO</h2>
       <div>
@@ -42,7 +39,7 @@ export default function ContactComp() {
               type="text"
               id="nombre"
               name="nombre"
-              size="60"
+              size="48"
               minLength="2"
               maxLength="30"
               autoComplete="nombre"
@@ -55,7 +52,7 @@ export default function ContactComp() {
               type="text"
               id="apellido"
               name="apellido"
-              size="60"
+              size="48"
               minLength="2"
               maxLength="30"
               autoComplete="apellido"
@@ -68,7 +65,7 @@ export default function ContactComp() {
               type="email"
               id="email"
               name="mail"
-              size="60"
+              size="48"
               minLength="2"
               maxLength="30"
               autoComplete="email"
@@ -80,10 +77,10 @@ export default function ContactComp() {
             <textarea
               name="comentario"
               id="comentario"
-              cols="61"
-              rows="5"
+              cols="50"
+              rows="8"
               required
-              defaultValue="Escribí tus consultas aquí!"
+              defaultValue=" Escribe tus consultas aquí!"
             />
           </fieldset>
           <br />

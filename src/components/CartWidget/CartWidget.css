@@ -2,6 +2,11 @@
     width: 28px;
 }
 
+.cartEstilo:hover {
+    width: 26px;
+    filter: drop-shadow(1px 2px 2px rgba(13, 208, 133, 2));
+}
+
 
 .cartNumerito {
     color: black;                
