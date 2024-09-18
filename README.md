@@ -1,7 +1,10 @@
 <h1>ArTam CraftS - Ecommerce</h1>
 <h3>Tienda de Diseño y Papelería Artesanal </h3>
 
-* DEPLOY: https://tam-s-c.github.io/ArtamCrafts-Ecommerce/
+![DEPLOY](https://tam-s-c.github.io/ArtamCrafts-Ecommerce/) 
+
+
+* DEPLOY: 
 * GitHub: https://github.com/Tam-S-C/ArtamCrafts-Ecommerce
 * GIF: https://drive.google.com/file/d/1qg5t-Kpvf1gMKXVBQOGypDkRjEDCSrdy/view?usp=sharing
 
