@@ -7,25 +7,28 @@ import { useParams } from 'react-router-dom';
 import { getCategoria } from '../../asyncMock.js';
 import { CATEGORIES } from '../NavBar/NavBar.jsx';
 
+
 export default function ItemsComp() {
-  const [products, setProducts] = useState([]);
+  const [productos, setProductos] = useState([]);
 
   const { category } = useParams();
 
   useEffect(() => {
     if (category) {
-      getCategoria(category).then((data) => setProducts(data));
+      getCategoria(category).then((data) => setProductos(data));
+    } else {
+      getProducts().then((data) => setProductos(data));
     }
-    getProducts.then((data) => setProducts(data));
   }, [category]);
+  
 
   return (
     <>
       <hr />
       <br />
-      <h2>{CATEGORIES[category]?.nombre}</h2>
+      <h2 style={{ fontFamily: 'monospace' }}>{CATEGORIES[category]?.nombre.toUpperCase()}</h2>
       <section className='centrarCards'>
-        {products.map((item) => (
+        {productos.map((item) => (
           <ItemsCard 
             key={item.id} 
             titulo={item.titulo} 

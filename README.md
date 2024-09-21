@@ -24,21 +24,23 @@
 > [!NOTE]
 > ENTREGA FINAL
 
-- [x] Navbar => con los botones de las categorías + Header con botones extras (Logo, Contacto, Sesión, buscador) 
-- [x] Catálogo => con sus rutas con React-Router-Dom
-- [x] Detalle de producto => de cada producto individual
-- [x] CartContext => uso de useContext
+- [x] Header => con LOGO + botones extras (Contacto + Sesión + Buscador).
+- [x] Navbar => con los botones de las categorías + CartWidget.
 - [x] CartWidget => el número se desmonta cuando no hay productos agregados, 
-pero elegí que quede siempre visible
-- [x] ItemList
+pero elegí que la imagen del carrito quede siempre renderizada.
+- [x] CartContext => uso de useContext / cartProvider.
+- [x] Catálogo => de productos, separados por categorías y a su vez, 
+vista de todos los productos en el Home ('/'), cada categoría con sus rutas con React-Router-Dom(rutas en App.jsx).
+- [x] ItemList con su Card con datos (a cada ItemCard se le sumó un botón de Like + LocalStorage).
 - [x] ItemDetailContainer
+    * Detalle de producto => de cada producto individual.
 - [x] ItemDetail
     *   ItemQuantitySelector => ContadorComp (ItemCount)
     *   Description
-    *   AddItemButton
-- [x] Checkout => CarritoComp, con el CartView, lista de productos agregados y formulario para finalizar la compra
+    *   AddItemCart Button
+- [x] Checkout => CarritoComp (CartView + lista de productos agregados + formulario para finalizar la compra)
     *   Brief (detalle de compra ya finalizada)
-
+- [x] Footer => componente extra para darle terminación a la web con links útiles.
 
 
 > [!NOTE]
@@ -71,3 +73,9 @@ pero elegí que quede siempre visible
 <h6>This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
   
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh</h6>
+
+Correr web con:
+* npm run dev
+
+o link del deploy:
+* [DEPLOY](https://tam-s-c.github.io/ArtamCrafts-Ecommerce/) 

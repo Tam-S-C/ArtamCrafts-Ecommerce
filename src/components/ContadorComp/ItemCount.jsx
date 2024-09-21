@@ -1,34 +1,33 @@
-import React from 'react'
+import React, { useContext, useState } from 'react';
 import './ItemCount.css';
-import { useState } from "react";
+import { CartContext } from '../../context/CartContext';
 
-export default function ItemCount() {
+export default function ItemCount({ product }) {
 
-    const [stock, setStock] = useState(1);
+  const { addItem } = useContext(CartContext);
+  const [stock, setStock] = useState(1);
 
-    const handleSumar = () => {
-        stock < 10 && setStock(stock + 1);
-    }
+  const handleSumar = () => {
+    stock < 10 && setStock(stock + 1);
+  };
 
-    const handleRestar = () => {
-        stock > 1 && setStock(stock - 1);
-    }
+  const handleRestar = () => {
+    stock > 1 && setStock(stock - 1);
+  };
 
-    const handleAgregar = () => {
-        
-    }
-
+  const handleAgregarAlCarrito = () => {
+    addItem(product, stock); 
+  };
 
   return (
     <div>
-            <div className="contenedorContador">
-                <button className="contador" onClick={handleRestar}>-</button>
-                <p className='stock'>{stock}</p>
-                <button className="contador" onClick={handleSumar}>+</button>
-            </div>
-            <button className="contador" onClick={handleAgregar}>Agregar al carrito</button>
-            <br/>
-
+      <div className="contenedorContador">
+        <button className="contador" onClick={handleRestar}>-</button>
+        <p className='stock'>{stock}</p>
+        <button className="contador" onClick={handleSumar}>+</button>
+      </div>
+      <button className="contador" onClick={handleAgregarAlCarrito}>Agregar al carrito</button>
+      <br/>
     </div>
-  )
+  );
 }

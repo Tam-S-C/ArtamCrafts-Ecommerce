@@ -1,17 +1,17 @@
 import { useContext } from 'react';
-import { CartContext } from '../context/CartContext';
+import { CartContext } from '../../context/CartContext';
 import UserInfo from './UserInfo';
 
 export default function CartView() {
-  const {cart,createNewOrder} = useContext(CartContext);
+  const {cart = [], setCart, addItem, removeItem, clearAll, isInCart, createNewOrder} = useContext(CartContext);
 
   return (
     <>
       <hr/>
       <br />
-      <h3>Carrito</h3>
+      <h2 style={{ fontFamily: 'monospace' }}>CARRITO 🛒</h2>
       {cart.length === 0 ? (
-        <p>Tu carrito se encuentra vacío 🛒</p>
+        <p>Tu carrito se encuentra vacío.</p>
       ) : (
         <ul>
           {cart.map((item, index) => (
@@ -19,7 +19,7 @@ export default function CartView() {
               <img src={item.imagen} alt={item.titulo} style={{ width: '5%'}} />
               <h4>{item.titulo}</h4>
               <p>Descripción: {item.descripcion}</p>
-              <p>Precio: ${item.pricio}</p>
+              <p>Precio: ${item.precio}</p>
               <p>Cantidad: {item.cantidad}</p>
             </div>
           ))}

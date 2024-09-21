@@ -7,33 +7,32 @@ import ItemCount from "../ContadorComp/ItemCount.jsx";
 
 export default function ItemDetailContainer() {
 
-  const [product, setProduct] = useState({});
+  const [product, setProduct] = useState(null); 
   const { itemId } = useParams();
 
-
   useEffect(() => {
-    setProduct(getProduct(itemId));
-  }, []); 
+    getProduct(itemId).then((data) => {
+      setProduct(data);
+    });
+  }, [itemId]); 
 
+  if (!product) {
+    return <p>Cargando producto...</p>; 
+  }
 
   return (
     <>
-    <hr/>
-    <div className='contenedorCards'>
-      <article className="card">
-        <h5>
-          {product.id} - {product.titulo}
-        </h5>
-
-        <img src={product.imagen} alt={product.titulo} width={220} className='zoom' />
-        <br/>
-
-        <h6>Precio: ${product.precio}</h6>
-        <p>{product.descripcion}</p>
-        
-        <ItemCount />
-      </article>
-    </div>
+      <hr/>
+      <div className='contenedorCards'>
+        <article className="card">
+          <h5>{product.titulo}</h5>
+          <img src={product.imagen} alt={product.titulo} width={220} className='zoom' />
+          <br/>
+          <h6>Precio: ${product.precio}</h6>
+          <p>{product.descripcion}</p>
+          <ItemCount product={product} />
+        </article>
+      </div>
     </>
   );
 }

@@ -124,22 +124,42 @@ const products = [
 
 ];
 
-export const getProducts = new Promise((resolve) => {
-  setTimeout(() => {
-    resolve(products);
-  }, 1000);
-});
+
 
 export const getProduct = (id) => {
-  return products.find((item) => item.id == id);
+  return new Promise((resolve, reject) => {
+    const product = products.find((item) => item.id === Number(id));
+    if (product) {
+      setTimeout(() => {
+        resolve(product);
+      }, 1000);
+    } else {
+      reject("Producto no encontrado");
+    }
+  });
 };
-//Filtrado por categoría
 
+
+export const getProducts = (id) => {
+  return new Promise((resolve, reject) => {
+    const productos = products.find((item) => item.id === Number(id));
+    if (productos) {
+      setTimeout(() => {
+        resolve(productos);
+      }, 1000);
+    } else {
+      reject("Productos no encontrados");
+    }
+  });
+};
+
+
+// Filtrado por categoría con promesas
 export const getCategoria = (category) => {
   return new Promise((resolve) => {
     setTimeout(() => {
       const productosFiltrados = products.filter((producto) => producto.category == category);
-      resolve(productosFiltrados);
+      resolve(productosFiltrados); 
     }, 1000);
   });
 };

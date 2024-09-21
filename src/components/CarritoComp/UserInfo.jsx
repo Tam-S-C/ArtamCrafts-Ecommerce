@@ -48,7 +48,7 @@ const UserInfo = ({carrito,createNewOrder}) => {
             <br/>
             <div>
                 <h5>Datos para realizar la transferencia:</h5>
-                <p>CVU: 0000003100001777492223 <p>Alias: ArtamCrafts</p></p>
+                <p>CVU: 0000003100001777492223 <span>Alias: ArtamCrafts</span></p>
 
                 <h6 style={{color:'red'}}>No te olvides de enviar tu comprobante con el pago realizado a  
                     <a className='mail' href="mailto:artamcrafts@hotmail.com" target="_blank" rel="noopener noreferrer">
