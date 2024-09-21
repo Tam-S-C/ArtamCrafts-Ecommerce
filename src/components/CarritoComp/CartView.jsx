@@ -4,7 +4,7 @@ import UserInfo from './UserInfo';
 import CardsEnCarrito from './CardsEnCarrito';
 
 export default function CartView() {
-  const {cart = [], setCart, addItem, removeItem, clearAll, isInCart, createNewOrder} = useContext(CartContext);
+  const { cart = [] } = useContext(CartContext);
 
   return (
     <>
@@ -15,14 +15,12 @@ export default function CartView() {
       {cart.length === 0 ? (
         <p>Tu carrito se encuentra vacío.</p>
       ) : (
-
-      <CardsEnCarrito />
-      
+        <CardsEnCarrito />
       )}
       <br />
-      <h3 style={{ fontFamily: 'monospace' }}>PRECIO FINAL: $ </h3>
+      <h3 style={{ fontFamily: 'monospace' }}>PRECIO FINAL: ${cart.reduce((total, item) => total + item.precio * item.quantity, 0)} </h3>
       <br />
-      <UserInfo carrito={cart} createNewOrder={createNewOrder}/>
+      <UserInfo carrito={cart} />
     </>
   );
 }

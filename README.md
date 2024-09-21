@@ -42,6 +42,7 @@ vista de todos los productos en el Home ('/'), cada categoría con sus rutas con
     *   Brief (detalle de compra ya finalizada)
 - [x] Footer => componente extra para darle terminación a la web con links útiles.
 
+---
 
 > [!NOTE]
 > Pre-Entrega 2 => 100%
@@ -54,6 +55,7 @@ vista de todos los productos en el Home ('/'), cada categoría con sus rutas con
 - [x] Link al detalle de cada uno de los productos
 - [x] Integración con parámetros de async-mocks utilizando efects y hooks.
 
+---
 
 > [!NOTE]
 > Pre-Entrega 1 => 100%

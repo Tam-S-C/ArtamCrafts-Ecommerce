@@ -6,7 +6,22 @@ export const CartContext = createContext({});
 
 export function CartProvider({ children }) {
   const [cart, setCart] = useState([]);
+  const [order, setOrder] = useState(null);
 
+
+  const createNewOrder = (order) => {
+    setOrder(order); 
+};
+
+
+/*   const createNewOrder = (order) => {
+    const db = getFirestore();
+    const ordersCollection = collection(db, 'order');
+
+    addDoc(ordersCollection, order).then((snapshot) => {
+        setOrder({ ...order, orderId: snapshot.id }); 
+    });
+}; */
 
   const addItem = (item, quantity) => {
     if (isInCart(item.id)) {
@@ -32,14 +47,17 @@ export function CartProvider({ children }) {
   };
 
 
-  const clearAll = () => {
+  const clear = () => {
     setCart([]);
   };
 
-  const [orderId, setOrderId] = useState('');
+  const clearAll = () => {
+    setCart([]);
+    setOrder(null);
+};
 
 
-  const createNewOrder = (order) => {
+ /*  const createNewOrder = (order) => {
     const db = getFirestore();
     const orders = collection(db, 'order');
 
@@ -51,10 +69,10 @@ export function CartProvider({ children }) {
 
       alert(snapshot.id, createNewOrder);
     });
-  };
+  }; */
 
   return (
-    <CartContext.Provider value={{ cart, setCart, addItem, removeItem, clearAll, isInCart, createNewOrder }}>
+    <CartContext.Provider value={{ cart, order, setCart, addItem, removeItem, clear, clearAll, isInCart, createNewOrder }}>
       {children}
     </CartContext.Provider>
   );
