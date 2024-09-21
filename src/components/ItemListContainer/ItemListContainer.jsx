@@ -15,18 +15,25 @@ export default function ItemsComp() {
 
   useEffect(() => {
     if (category) {
-      getCategoria(category).then((data) => setProductos(data));
+      getCategoria(category).then((data) => {
+        setProductos(data);
+      });
     } else {
-      getProducts().then((data) => setProductos(data));
+      getProducts().then((data) => {
+        setProductos(data);
+      });
     }
   }, [category]);
+  
   
 
   return (
     <>
       <hr />
       <br />
-      <h2 style={{ fontFamily: 'monospace' }}>{CATEGORIES[category]?.nombre.toUpperCase()}</h2>
+        <h2 style={{ fontFamily: 'monospace' }}>
+          {category ? CATEGORIES[category]?.nombre.toUpperCase() : 'TODOS LOS PRODUCTOS'}
+        </h2>
       <section className='centrarCards'>
         {productos.map((item) => (
           <ItemsCard 

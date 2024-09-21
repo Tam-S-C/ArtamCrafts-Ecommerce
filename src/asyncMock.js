@@ -140,21 +140,16 @@ export const getProduct = (id) => {
 };
 
 
-export const getProducts = (id) => {
-  return new Promise((resolve, reject) => {
-    const productos = products.find((item) => item.id === Number(id));
-    if (productos) {
-      setTimeout(() => {
-        resolve(productos);
-      }, 1000);
-    } else {
-      reject("Productos no encontrados");
-    }
+export const getProducts = () => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(products);
+    }, 1000);
   });
 };
 
 
-// Filtrado por categoría con promesas
+// Categorías
 export const getCategoria = (category) => {
   return new Promise((resolve) => {
     setTimeout(() => {

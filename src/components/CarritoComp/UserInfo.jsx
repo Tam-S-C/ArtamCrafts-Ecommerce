@@ -48,8 +48,9 @@ const UserInfo = ({carrito,createNewOrder}) => {
             <br/>
             <div>
                 <h5>Datos para realizar la transferencia:</h5>
-                <p>CVU: 0000003100001777492223 <span>Alias: ArtamCrafts</span></p>
-
+                <br/>
+                <p>CVU: 0000003100001777492223 </p>
+                <p>Alias: ArtamCrafts</p>
                 <h6 style={{color:'red'}}>No te olvides de enviar tu comprobante con el pago realizado a  
                     <a className='mail' href="mailto:artamcrafts@hotmail.com" target="_blank" rel="noopener noreferrer">
                      artamcrafts@hotmail.com 
@@ -58,10 +59,10 @@ const UserInfo = ({carrito,createNewOrder}) => {
                 
             </div>
             <div>
-                <button onClick={handleSubmit}>Finalizar compra</button>
+                <button className='finCompra' onClick={handleSubmit}>Finalizar compra</button>
             </div>
         </div>
     )
 }
 
-export default UserInfo
+export default UserInfo;

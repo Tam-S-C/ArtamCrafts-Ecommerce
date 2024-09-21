@@ -26,7 +26,7 @@ export default function ItemCount({ product }) {
         <p className='stock'>{stock}</p>
         <button className="contador" onClick={handleSumar}>+</button>
       </div>
-      <button className="contador" onClick={handleAgregarAlCarrito}>Agregar al carrito</button>
+      <button className="contador" onClick={handleAgregarAlCarrito}>Agregar/Restar ítem al carrito</button>
       <br/>
     </div>
   );

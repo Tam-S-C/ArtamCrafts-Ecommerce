@@ -49,7 +49,7 @@ export function CartProvider({ children }) {
       const getDocRef = doc(db, 'order', snapshot.id);
       updateDoc(getDocRef, { orderId: snapshot.id });
 
-      alert(snapshot.id);
+      alert(snapshot.id, createNewOrder);
     });
   };
 
