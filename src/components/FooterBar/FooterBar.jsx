@@ -44,7 +44,6 @@ export default function FooterBar() {
                 </div>
                 <br />
             </footer>
-            <br />
         </>
     );
 }

@@ -41,3 +41,23 @@ header {
   }
   
 }
+
+@media (max-width: 500px) {
+
+  header {
+    font-size: smaller;
+    margin: 4px 0 8px 0;
+    gap: 8px
+  }
+
+  .inputEstilo {
+    height: 28px;
+    width: 130px;
+    font-size: smaller;
+  }
+
+  .imgLogo img{
+    width: 28px;
+  }
+  
+}

@@ -13,9 +13,10 @@
 }
 
 body {
-  margin: 0;
+  margin: auto;
   display: flex;
   place-items: center;
+  text-align: center;
 }
 
 h1 {

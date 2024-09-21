@@ -1,6 +1,6 @@
 .contCards {
   display: grid;
-  margin: auto 20px;
+  margin: auto;
   float:inline-start;
   padding: 10px;
 }

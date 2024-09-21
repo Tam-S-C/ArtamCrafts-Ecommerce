@@ -2,9 +2,14 @@
 <h3>Tienda de Diseño y Papelería Artesanal </h3>
 
 > LINKS:
+
 * [DEPLOY](https://tam-s-c.github.io/ArtamCrafts-Ecommerce/) 
+
 * [GitHub](https://github.com/Tam-S-C/ArtamCrafts-Ecommerce)
+
 * [GIF](https://drive.google.com/file/d/1qg5t-Kpvf1gMKXVBQOGypDkRjEDCSrdy/view?usp=sharing)
+
+---
 
 > Curso: React JS - CoderHouse - Comisión 60020
 
@@ -14,22 +19,25 @@
 * Tutor: Nicolas Oriti Tizio
 * Tutor Adjunto: Dario Rodriguez
 
+---
+
 > [!NOTE]
 > ENTREGA FINAL
 
-- [x] Navbar
-- [x] Catálogo
-- [x] Detalle de producto
-- [x] CartContext
-- [x] CartWidget
+- [x] Navbar => con los botones de las categorías + Header con botones extras (Logo, Contacto, Sesión, buscador) 
+- [x] Catálogo => con sus rutas con React-Router-Dom
+- [x] Detalle de producto => de cada producto individual
+- [x] CartContext => uso de useContext
+- [x] CartWidget => el número se desmonta cuando no hay productos agregados, 
+pero elegí que quede siempre visible
 - [x] ItemList
 - [x] ItemDetailContainer
 - [x] ItemDetail
-    *   ItemQuantitySelector
+    *   ItemQuantitySelector => ContadorComp (ItemCount)
     *   Description
     *   AddItemButton
-- [x] Checkout
-    *   Brief (detalle de compra)
+- [x] Checkout => CarritoComp, con el CartView, lista de productos agregados y formulario para finalizar la compra
+    *   Brief (detalle de compra ya finalizada)
 
 
 

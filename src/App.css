@@ -1,11 +1,11 @@
 #root {
   margin: auto;
-  padding: 2rem;
+  padding: 1.5rem;
   text-align: center;
 }
 
 .contenedorTotal {
-  min-height: 90dvh;
+  min-height: 95dvh;
   display: grid;
   grid-template-rows: auto auto auto auto;
 }
