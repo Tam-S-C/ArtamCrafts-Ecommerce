@@ -87,6 +87,10 @@ button:focus {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+.load{
+  margin: auto;
+}
+
 @media (max-width: 1300px){
   .centrarCards {
     display: grid;

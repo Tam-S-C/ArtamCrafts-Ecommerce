@@ -25,21 +25,32 @@
 > ENTREGA FINAL
 
 - [x] Header => con LOGO + botones extras (Contacto + Sesión + Buscador).
+
 - [x] Navbar => con los botones de las categorías + CartWidget.
+
 - [x] CartWidget => el número se desmonta cuando no hay productos agregados, 
 pero elegí que la imagen del carrito quede siempre renderizada.
+
 - [x] CartContext => uso de useContext / cartProvider.
+
 - [x] Catálogo => de productos, separados por categorías y a su vez, 
 vista de todos los productos en el Home ('/'), cada categoría con sus rutas con React-Router-Dom(rutas en App.jsx).
+
+- [x] Loading en el primer renderizado de la web con React-Loading.
+
 - [x] ItemList con su Card con datos (a cada ItemCard se le sumó un botón de Like + LocalStorage).
+
 - [x] ItemDetailContainer
     * Detalle de producto => de cada producto individual.
+
 - [x] ItemDetail
     *   ItemQuantitySelector => ContadorComp (ItemCount)
     *   Description
     *   AddItemCart Button
+
 - [x] Checkout => CarritoComp (CartView + lista de productos agregados + formulario para finalizar la compra)
     *   Brief (detalle de compra ya finalizada)
+
 - [x] Footer => componente extra para darle terminación a la web con links útiles.
 
 ---
@@ -78,6 +89,5 @@ vista de todos los productos en el Home ('/'), cada categoría con sus rutas con
 
 Correr web con:
 * npm run dev
-
-o link del deploy:
+O link del deploy:
 * [DEPLOY](https://tam-s-c.github.io/ArtamCrafts-Ecommerce/) 

@@ -6,9 +6,19 @@ import './ItemsCard.css';
 import { useParams } from 'react-router-dom';
 import { getCategoria } from '../../asyncMock.js';
 import { CATEGORIES } from '../NavBar/NavBar.jsx';
+import ReactLoading from 'react-loading';
 
 
 export default function ItemsComp() {
+
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 3500);
+  }, []);
+
   const [productos, setProductos] = useState([]);
 
   const { category } = useParams();
@@ -30,10 +40,22 @@ export default function ItemsComp() {
   return (
     <>
       <hr />
+
+      {loading ? 
+      ( <ReactLoading 
+        type="spinningBubbles" 
+        color="black" 
+        width={80} 
+        className='load'/> 
+      ) : (
+      <div>
       <br />
+
         <h2 style={{ fontFamily: 'monospace' }}>
-          {category ? CATEGORIES[category]?.nombre.toUpperCase() : 'TODOS LOS PRODUCTOS'}
+          {category ? CATEGORIES[category]?.nombre.toUpperCase() 
+          : 'TODOS LOS PRODUCTOS'}
         </h2>
+
       <section className='centrarCards'>
         {productos.map((item) => (
           <ItemsCard 
@@ -45,7 +67,10 @@ export default function ItemsComp() {
             category={item.category}
           />
         ))}
-      </section>
+      </section> 
+
+      </div>
+    )}
     </>
   );
 }
