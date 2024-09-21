@@ -24,6 +24,8 @@
 > [!NOTE]
 > ENTREGA FINAL
 
+<!-- // falta q funcione ok el agregar +- items, pasar items a firebase, q funcione el chekout con la info, ver variable de entorno-->
+
 - [x] Header => con LOGO + botones extras (Contacto + Sesión + Buscador).
 
 - [x] Navbar => con los botones de las categorías + CartWidget.
@@ -45,13 +47,14 @@ vista de todos los productos en el Home ('/'), cada categoría con sus rutas con
 
 - [x] ItemDetail
     *   ItemQuantitySelector => ContadorComp (ItemCount)
-    *   Description
-    *   AddItemCart Button
+    *   Description + precio
+    *   AddItemCart Button => agregar al carrito
 
-- [x] Checkout => CarritoComp (CartView + lista de productos agregados + formulario para finalizar la compra)
-    *   Brief (detalle de compra ya finalizada)
+- [x] CarritoComp / CartView
+    *   CartView con renderizado condicional, si no hay productos muestra un mensaje y un botón que vuelve al hom para seguir comprando, sino muestra la lista de productos agregados + formulario para finalizar la compra.
+    *   CheckOut / Brief (detalle de compra ya finalizada)
 
-- [x] Footer => componente extra para darle terminación a la web con links útiles.
+- [x] Footer => componente extra para darle terminación a la web con links útiles + uso de memo / memoizing.
 
 ---
 

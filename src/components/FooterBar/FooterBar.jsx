@@ -6,8 +6,11 @@ import youtubeIcon from '../../assets/imgIcons/Icono_YouTube.png';
 import linkedinIcon from '../../assets/imgIcons/Icono_Linkedin.png';
 import githubIcon from '../../assets/imgIcons/Icono_GitHub.png';
 import mailIcon from '../../assets/imgIcons/Icono_mail.png';
+import {memo} from 'react';
 
-export default function FooterBar() {
+
+
+export default memo(function FooterBar() {
     return (
         <>
             <footer>
@@ -47,4 +50,4 @@ export default function FooterBar() {
             <br/>
         </>
     );
-}
+});

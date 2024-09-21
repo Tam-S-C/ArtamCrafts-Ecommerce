@@ -14,9 +14,10 @@ export default function ItemsComp() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => {
+   setTimeout(() => {
       setLoading(false);
-    }, 3500);
+    }, 2000);
+    ;
   }, []);
 
   const [productos, setProductos] = useState([]);
