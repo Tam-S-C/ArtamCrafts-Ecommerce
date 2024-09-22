@@ -16,8 +16,7 @@ export default function CardsEnCarrito() {
               <img className='imgProducto' src={item.imagen} alt={item.titulo} />
             </div>
             <div>
-              <h4>{item.titulo}</h4>
-              <p>Descripción: {item.descripcion}</p>
+              <h5>{item.titulo}</h5>
             </div>
             <div className='datosCarrito'>
               <p>Precio Unitario: ${item.precio}</p>
