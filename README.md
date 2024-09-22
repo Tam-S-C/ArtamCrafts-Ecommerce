@@ -27,7 +27,7 @@
 > ENTREGA FINAL
 
 
-- [x] Header => con LOGO + botones extras (Contacto + Sesión + Buscador).
+- [x] Header => con LOGO(con link al Home '/') + botones extras (Contacto + Sesión + Buscador).
 
 - [x] Navbar => con los botones de las categorías + CartWidget.
 
@@ -37,23 +37,24 @@ pero elegí que la imagen del carrito quede siempre renderizada.
 - [x] CartContext => uso de useContext/Provider.
 
 - [x] Catálogo => de productos, separados por categorías y a su vez, 
-vista de todos los productos en el Home ('/'), cada categoría con sus rutas con React-Router-Dom(rutas en App.jsx).
+vista de todos los productos en el Home ('/'), cada categoría con sus rutas con React-Router-Dom(rutas en App.jsx / NavBar.jsx).
 
 - [x] Loading en el primer renderizado de la web con React-Loading.
 
-- [x] ItemList con las Cards con datos (a cada ItemCard se le sumó un botón de Like + LocalStorage).
-
-- [x] ItemDetailContainer
-    * Detalle de producto => de cada producto individual.
+- [x] ItemListContainer con las Cards con sus datos
+    * ItemList => ItemsCard se le sumó un botón de Like + LocalStorage (más adelante se sumará botón al navBar con el listado de los favs seleccionados.)
+    * ItemDetailContainer => Detalle de producto, de cada producto individual.
 
 - [x] ItemDetail
-    *   ItemQuantitySelector => ContadorComp (ItemCount)
+    *   ItemQuantitySelector => ContadorComp, nombrado ItemCount.
     *   Description + precio + stock
     *   AddItem Button => agregar al carrito
 
-- [x] CarritoComp / CartView
-    *   CartView con renderizado condicional, si no hay productos muestra un mensaje y un botón que vuelve al home para seguir comprando, sino muestra la lista de productos agregados + formulario para finalizar la compra.
-    *   CheckOut / Brief (detalle de compra ya finalizada con los datos del usuario y generación de la orden que queda guardada en Firebase)
+- [x] CheckOut
+    *   CartView => con renderizado condicional, si no hay productos muestra un mensaje y un botón que vuelve al Home para seguir comprando, sino muestra la lista de productos agregados + formulario para finalizar la compra.
+    *   CheckOut / Brief => detalle de compra ya finalizada con los datos del usuario y generación de la orden que queda guardada en Firebase, borrado del carrito y botón para volver al Home.
+    *   UserInfo => con el fomulario.
+    *   CardsEnCarrito => detalle de cada ítem en la vista del carrito.
 
 - [x] Footer => componente extra para darle terminación a la web con links útiles + uso de memo / memoizing.
 
