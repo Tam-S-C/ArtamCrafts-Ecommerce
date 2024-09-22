@@ -1,4 +1,4 @@
-import agendaFriends from './assets/imgProducts/agAnFriends.jpg';
+/* import agendaFriends from './assets/imgProducts/agAnFriends.jpg';
 import stickersFriends from './assets/imgProducts/stickersFriends.jpg';
 import boxFriends from './assets/imgProducts/boxFriends.jpg';
 import agendaBttF from './assets/imgProducts/agAnBttF.jpg';
@@ -11,7 +11,7 @@ import stickersHP from './assets/imgProducts/stickersHP.jpg';
 import stickersStitch from './assets/imgProducts/stickersStitch.jpg';
 import agendaJack from './assets/imgProducts/agAnJack.jpg';
 
-import { CATEGORIES } from './components/NavBar/NavBar';
+
 
 const products = [
   {
@@ -158,3 +158,4 @@ export const getCategoria = (category) => {
     }, 1000);
   });
 };
+ */

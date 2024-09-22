@@ -3,7 +3,7 @@ import './UserInfo.css';
 import { useNavigate } from 'react-router-dom';
 import { CartContext } from '../../context/CartContext';
 
-const UserInfo = ({ carrito }) => {
+const UserInfo = ({ carrito, createNewOrder }) => {
     const [nombre, setNombre] = useState('');
     const [apellido, setApellido] = useState('');
     const [dni, setDni] = useState('');
@@ -13,7 +13,7 @@ const UserInfo = ({ carrito }) => {
     const [localidad, setLocalidad] = useState('');
     const [cp, setCP] = useState('');
 
-    const { clearAll, createNewOrder } = useContext(CartContext);
+    const { clearAll } = useContext(CartContext);
     const navigate = useNavigate();
 
     const handleSubmit = () => {

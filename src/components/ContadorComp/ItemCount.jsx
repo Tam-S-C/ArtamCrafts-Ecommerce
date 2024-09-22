@@ -2,32 +2,38 @@ import React, { useContext, useState } from 'react';
 import './ItemCount.css';
 import { CartContext } from '../../context/CartContext';
 
-export default function ItemCount({ product }) {
-
+export default function ItemCount({ product, initialCount = 1, showAddButton = true }) {
   const { addItem } = useContext(CartContext);
-  const [stock, setStock] = useState(1);
+  const [cant, setCant] = useState(initialCount);
 
   const handleSumar = () => {
-    stock < 10 && setStock(stock + 1);
+    if (cant < 10 && cant < product.stock) {
+      setCant(cant + 1);
+      addItem(product, 1); 
+    }
   };
 
   const handleRestar = () => {
-    stock > 1 && setStock(stock - 1);
+    if (cant > 1) {
+      setCant(cant - 1);
+      addItem(product, -1); 
+    }
   };
 
-  const handleAgregarAlCarrito = () => {
-    addItem(product, stock); 
+  const agregarAlCarrito = () => {
+    addItem(product, cant); 
   };
 
   return (
     <div>
       <div className="contenedorContador">
         <button className="contador" onClick={handleRestar}>-</button>
-        <p className='stock'>{stock}</p>
+        <p className='stock'>{cant}</p>
         <button className="contador" onClick={handleSumar}>+</button>
       </div>
-      <button className="contador" onClick={handleAgregarAlCarrito}>Agregar/Restar ítem al carrito</button>
-      <br/>
+      {showAddButton && (
+        <button className="contador" onClick={agregarAlCarrito}>Agregar ítem al carrito</button>
+      )}
     </div>
   );
 }

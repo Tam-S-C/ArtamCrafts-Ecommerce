@@ -22,12 +22,19 @@ export default function CardsEnCarrito() {
             <div className='datosCarrito'>
               <p>Precio Unitario: ${item.precio}</p>
             </div>
+
             <div>
-              <ItemCount />
+              <ItemCount
+                product={item}
+                initialCount={item.quantity} 
+                showAddButton={false}        
+              />
             </div>
+
             <div className='cantCart'>
               <p>Cantidad: {item.quantity}</p>
             </div>
+
             <div>
               <button className='tachoBoton'>
                 <img

@@ -10,7 +10,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { CartProvider } from './context/CartContext';
 import CartView from './components/CarritoComp/CartView';
 import CheckOutBrief from './components/CarritoComp/CheckOutBrief';
-import Product from './Products';
+
 
 
 function App() {
@@ -23,15 +23,14 @@ function App() {
           
           <CartProvider>
             <NavBar />
-            <Product />
 
           <Routes>
             <Route exact path="/contact" element={<ContactComp />}/>
             <Route exact path="/sesion" element={<SesionComp />}/>
             <Route exact path="" element={<ItemListContainer />}/>
-            <Route exact path="/:category" element={<ItemListContainer />}/>
+            <Route exact path="/category/:categoryId" element={<ItemListContainer />}/>
             <Route exact path="/item/:itemId" element={<ItemDetailContainer />} />
-            <Route exact path="/:category/:itemId" element={<ItemDetailContainer />} />
+            <Route exact path="/:categoryId/:itemId" element={<ItemDetailContainer />} />
             <Route exact path='/cart' element={<CartView />} />
             <Route exact path='/checkOutBrief' element={<CheckOutBrief />} />
            </Routes>

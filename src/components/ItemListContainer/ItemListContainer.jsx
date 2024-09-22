@@ -1,42 +1,54 @@
 import React from 'react';
-import { getProducts } from '../../asyncMock.js';
 import { useEffect, useState } from 'react';
 import ItemsCard from './ItemsCard';
 import './ItemsCard.css';
 import { useParams } from 'react-router-dom';
-import { getCategoria } from '../../asyncMock.js';
-import { CATEGORIES } from '../NavBar/NavBar.jsx';
 import ReactLoading from 'react-loading';
+import { collection, getFirestore, getDocs, query, where } from 'firebase/firestore';
 
 
 export default function ItemsComp() {
 
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-   setTimeout(() => {
-      setLoading(false);
-    }, 2000);
-    ;
-  }, []);
+  const [allProducts, setAllProducts] = useState([]);
 
-  const [productos, setProductos] = useState([]);
+  const { categoryId } = useParams();
 
-  const { category } = useParams();
 
   useEffect(() => {
-    if (category) {
-      getCategoria(category).then((data) => {
-        setProductos(data);
+    const db = getFirestore();
+  
+    if (categoryId) {
+      const productsCollection = query(collection(db, 'productos'), where('category', '==', categoryId));
+  
+      getDocs(productsCollection).then((snapshot) => {
+        if (snapshot.size === 0) {
+          return <h3>No hay productos</h3>;
+        }
+        setAllProducts(snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() })));
+        setLoading(false); 
+      }).catch(() => {
+        setLoading(false); 
       });
+  
     } else {
-      getProducts().then((data) => {
-        setProductos(data);
+      const productsCollection = collection(db, 'productos');
+  
+      getDocs(productsCollection).then((snapshot) => {
+        if (snapshot.size === 0) {
+          return <h3>No hay productos</h3>;
+        }
+        setAllProducts(snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() })));
+        setLoading(false);
+      }).catch(() => {
+        setLoading(false);
       });
     }
-  }, [category]);
+  }, [categoryId]);
   
   
+
 
   return (
     <>
@@ -53,19 +65,19 @@ export default function ItemsComp() {
       <br />
 
         <h2 style={{ fontFamily: 'monospace' }}>
-          {category ? CATEGORIES[category]?.nombre.toUpperCase() 
+          {categoryId ? categoryId 
           : 'TODOS LOS PRODUCTOS'}
         </h2>
 
       <section className='centrarCards'>
-        {productos.map((item) => (
+        {allProducts.map((product) => (
           <ItemsCard 
-            key={item.id} 
-            titulo={item.titulo} 
-            precio={item.precio} 
-            imagen={item.imagen} 
-            id={item.id} 
-            category={item.category}
+            key={product.id} 
+            titulo={product.titulo} 
+            precio={product.precio} 
+            imagen={product.imagen} 
+            id={product.id} 
+            category={product.category}
           />
         ))}
       </section> 

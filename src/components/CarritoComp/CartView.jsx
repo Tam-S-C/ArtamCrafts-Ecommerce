@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import './CartView.css';
 
 export default function CartView() {
-  const { cart = [] } = useContext(CartContext);
+  const { cart = [], createNewOrder } = useContext(CartContext);
 
   return (
     <>
@@ -27,7 +27,7 @@ export default function CartView() {
           <br />
         <h3 style={{ fontFamily: 'monospace' }}>PRECIO FINAL: ${cart.reduce((total, item) => total + item.precio * item.quantity, 0)} </h3>
         <br />
-        <UserInfo carrito={cart} />
+        <UserInfo carrito={cart} createNewOrder={createNewOrder}/>
         
         </>
       )}
