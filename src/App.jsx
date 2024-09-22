@@ -8,8 +8,8 @@ import SesionComp from './components/HeaderComp/SesionComp';
 import ItemDetailContainer from './components/ItemListContainer/ItemDetailContainer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { CartProvider } from './context/CartContext';
-import CartView from './components/CarritoComp/CartView';
-import CheckOutBrief from './components/CarritoComp/CheckOutBrief';
+import CartView from './components/CheckOut/CartView';
+import CheckOut from './components/CheckOut/CheckOut';
 
 
 
@@ -32,7 +32,7 @@ function App() {
             <Route exact path="/item/:itemId" element={<ItemDetailContainer />} />
             <Route exact path="/:categoryId/:itemId" element={<ItemDetailContainer />} />
             <Route exact path='/cart' element={<CartView />} />
-            <Route exact path='/checkOutBrief' element={<CheckOutBrief />} />
+            <Route exact path='/checkOut' element={<CheckOut />} />
            </Routes>
 
           </CartProvider>
