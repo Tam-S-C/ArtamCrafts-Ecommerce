@@ -1,5 +1,6 @@
 import { useContext } from 'react';
 import { CartContext } from '../../context/CartContext';
+import { Link } from 'react-router-dom';
 
 export default function CheckOutBrief() {
     const { order } = useContext(CartContext);
@@ -60,7 +61,9 @@ export default function CheckOutBrief() {
                 </h6>
             </div>
 
-
+            <br/>
+          <Link to={'/'} className='volver'>Volver al Home</Link>
+          <br/>
         </>
     );
 }

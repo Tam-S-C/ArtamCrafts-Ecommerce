@@ -32,6 +32,7 @@ export default function CardsEnCarrito() {
 
             <div className='cantCart'>
               <p>Cantidad: {item.quantity}</p>
+              <p>Subtotal: ${item.precio * item.quantity}</p>
             </div>
 
             <div>
