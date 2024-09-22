@@ -64,7 +64,7 @@ export default function ItemsComp() {
       <div>
       <br />
 
-        <h2 style={{ fontFamily: 'monospace' }}>
+        <h2 style={{ fontFamily: 'monospace', textTransform: 'uppercase' }}>
           {categoryId ? categoryId 
           : 'TODOS LOS PRODUCTOS'}
         </h2>

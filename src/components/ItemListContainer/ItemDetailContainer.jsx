@@ -46,7 +46,9 @@ export default function ItemDetailContainer() {
           <br/>
           <h6>Precio: ${product.precio}</h6>
           <h6>Stock: {product.stock}</h6>
+          <p>{product.descripcion}</p>
           <ItemCount product={product} precio={product.precio} Stock={product.stock} agregarAlCarrito={onAdd} />
+          <br/>
         </article>
       </div>
     </>
