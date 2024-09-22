@@ -10,8 +10,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { CartProvider } from './context/CartContext';
 import CartView from './components/CarritoComp/CartView';
 import CheckOutBrief from './components/CarritoComp/CheckOutBrief';
-
-
+import Product from './Products';
 
 
 function App() {
@@ -24,6 +23,7 @@ function App() {
           
           <CartProvider>
             <NavBar />
+            <Product />
 
           <Routes>
             <Route exact path="/contact" element={<ContactComp />}/>

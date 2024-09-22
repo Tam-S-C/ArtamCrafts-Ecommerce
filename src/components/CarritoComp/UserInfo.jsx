@@ -62,7 +62,7 @@ const UserInfo = ({ carrito }) => {
                 </h6>
             </div>
             <div>
-                <button className='finCompra' onClick={handleSubmit}>Finalizar compra</button>
+                <button className='finCompra' onClick={handleSubmit}>Terminar mi compra</button>
             </div>
         </div>
     )

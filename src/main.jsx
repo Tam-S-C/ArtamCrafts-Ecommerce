@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 import { initializeApp } from "firebase/app";
-// https://firebase.google.com/docs/web/setup#available-libraries
+
 const firebaseConfig = {
   apiKey: "AIzaSyBLSqXmtoTXeoVWjqqnOXWBXvOyu1vWEZA",
   authDomain: "artamcrafts-bd.firebaseapp.com",

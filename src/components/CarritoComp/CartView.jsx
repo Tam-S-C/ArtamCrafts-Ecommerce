@@ -28,6 +28,7 @@ export default function CartView() {
         <h3 style={{ fontFamily: 'monospace' }}>PRECIO FINAL: ${cart.reduce((total, item) => total + item.precio * item.quantity, 0)} </h3>
         <br />
         <UserInfo carrito={cart} />
+        
         </>
       )}
       
