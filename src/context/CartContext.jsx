@@ -8,16 +8,16 @@ export function CartProvider({ children }) {
   const [order, setOrder] = useState('');
 
   const createNewOrder = (order) => {
-  const db = getFirestore();
-  const orders = collection(db, 'order');
+    const db = getFirestore();
+    const orders = collection(db, 'order');
 
     addDoc(orders, order).then((snapshot) => {
-      setOrder(snapshot.id);
-      const getDoc = doc(db, 'order', snapshot.id);
-      updateDoc(getDoc, { orderId: snapshot.id });
-      alert(snapshot.id);
+        setOrder({ id: snapshot.id, ...order });
+        const getDoc = doc(db, 'order', snapshot.id);
+        updateDoc(getDoc, { orderId: snapshot.id });
     });
-  };
+};
+
 
   const addItem = (item, quantity) => {
 
@@ -56,7 +56,7 @@ export function CartProvider({ children }) {
   };
 
  
-  //Para reliminar TODOS los productos del carrito luego de realizada la compra
+  //Para eliminar TODOS los productos del carrito luego de realizada la compra
   const clearAll = () => {
     setCart([]);
     setOrder(null);

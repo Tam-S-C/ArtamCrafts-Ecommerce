@@ -77,3 +77,22 @@
         padding: auto;
       }
   }
+
+  @media (max-width: 700px){
+  
+    .imgProducto {
+        max-width: 90px; 
+        border-radius: 8px; 
+        width: 100%; 
+        margin: 16px;
+      }
+
+    .cantCart {
+        margin: 16px;
+     }
+
+     .tacho {
+        margin: 32px 60px;
+        padding: auto;
+      }
+  }
