@@ -1,33 +1,37 @@
-import React, { useContext, useState } from 'react';
+import { useContext, useState } from 'react';
 import './ItemCount.css';
 import { CartContext } from '../../context/CartContext';
 import Swal from 'sweetalert2';
 
-export default function ItemCount({ product, initialCount = 1, showAddButton = true }) {
-
+export default function ItemCount({ product, initialCount = 1, showAddButton = true, onQuantityChange }) {
 
   const { addItem } = useContext(CartContext);
   const [cant, setCant] = useState(initialCount);
 
   const handleSumar = () => {
     if (cant < 10 && cant < product.stock) {
-      setCant(cant + 1);
-      addItem(product, 1); 
+      const newCount = cant + 1;
+      setCant(newCount);
+      if (onQuantityChange) {
+        onQuantityChange(newCount);
+      }
     }
   };
 
   const handleRestar = () => {
     if (cant > 1) {
-      setCant(cant - 1);
-      addItem(product, -1); 
+      const newCount = cant - 1;
+      setCant(newCount);
+      if (onQuantityChange) {
+        onQuantityChange(newCount);
+      }
     }
   };
 
   const agregarAlCarrito = () => {
-    addItem(product, cant);
+    addItem(product, cant); 
     itemAgregado(); 
   };
-
 
   const itemAgregado = () => {
     Swal.fire({
@@ -42,7 +46,6 @@ export default function ItemCount({ product, initialCount = 1, showAddButton = t
     });
   };
 
-
   return (
     <div>
       <div className="contenedorContador">
@@ -51,7 +54,7 @@ export default function ItemCount({ product, initialCount = 1, showAddButton = t
         <button className="contador" onClick={handleSumar}>+</button>
       </div>
       {showAddButton && (
-        <button className="contador" onSubmit={itemAgregado} onClick={agregarAlCarrito}>Agregar ítem al carrito</button>
+        <button className="contador" onClick={agregarAlCarrito}>Agregar ítem al carrito</button>
       )}
     </div>
   );

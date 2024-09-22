@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import { useState, useContext } from 'react';
 import './UserInfo.css';
 import { useNavigate } from 'react-router-dom';
 import { CartContext } from '../../context/CartContext';
@@ -20,7 +20,12 @@ const UserInfo = ({ carrito, createNewOrder }) => {
             setError('Todos los campos son obligatorios.');
             return;
         }
-    
+
+        if  (!/\S+@\S+\.\S+/.test(email)) {
+            setError('El formato del email es incorrecto');
+            return;
+        }
+      
         if ([nombre, direccion, localidad, cp].some(field => field.length < 3) || 
             dni.length < 7 || isNaN(dni) ) {
             setError('Todos los campos deben tener al menos 3 caracteres. El DNI debe ser sólo números y tener al menos 7 dígitos.');

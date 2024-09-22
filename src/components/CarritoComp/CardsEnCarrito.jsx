@@ -5,7 +5,12 @@ import ItemCount from '../ContadorComp/ItemCount';
 import tachoIcon from '../../assets/imgIcons/Icono_Tacho.png';
 
 export default function CardsEnCarrito() {
-  const { cart = [], removeItem } = useContext(CartContext);
+  const { cart = [], removeItem, addItem } = useContext(CartContext);
+
+  // Función para actualizar la cantidad en el carrito
+  const handleQuantityChange = (item, newQuantity) => {
+    addItem(item, newQuantity - item.quantity); // Agregamos la diferencia de cantidad
+  };
 
   return (
     <>
@@ -25,8 +30,9 @@ export default function CardsEnCarrito() {
             <div>
               <ItemCount
                 product={item}
-                initialCount={item.quantity} 
-                showAddButton={false}        
+                initialCount={item.quantity}
+                showAddButton={false}
+                onQuantityChange={(newQuantity) => handleQuantityChange(item, newQuantity)} // Pasamos la función aquí
               />
             </div>
 
