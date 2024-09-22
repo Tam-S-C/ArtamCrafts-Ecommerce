@@ -38,7 +38,6 @@ export default function CheckOutBrief() {
                     <p><strong>Dirección:</strong> {order.buyer.direccion}</p>
                     <p><strong>Localidad:</strong> {order.buyer.localidad}</p>
                     <p><strong>Código Postal:</strong> {order.buyer.cp}</p>
-                    <p><strong>Teléfono:</strong> {order.buyer.telefono}</p>
                     <p><strong>Fecha de Creación:</strong> {new Date(order.creadoEn).toLocaleString()}</p>
                 </>
             ) : (
