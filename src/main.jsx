@@ -8,12 +8,12 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import { initializeApp } from "firebase/app";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBLSqXmtoTXeoVWjqqnOXWBXvOyu1vWEZA",
-  authDomain: "artamcrafts-bd.firebaseapp.com",
-  projectId: "artamcrafts-bd",
-  storageBucket: "artamcrafts-bd.appspot.com",
-  messagingSenderId: "1098356967022",
-  appId: "1:1098356967022:web:41971ca635843e40e3887f"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID
 };
 
 const app = initializeApp(firebaseConfig);
