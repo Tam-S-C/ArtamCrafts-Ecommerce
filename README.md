@@ -41,14 +41,13 @@ vista de todos los productos en el Home ('/'), cada categoría con sus rutas con
 
 - [x] Loading en el primer renderizado de la web con React-Loading.
 
-- [x] ItemListContainer con las Cards con sus datos
+- [x] ItemListContainer => contiene a todas las Cards con sus datos.
     * ItemList => ItemsCard se le sumó un botón de Like + LocalStorage (más adelante se sumará botón al navBar con el listado de los favs seleccionados.)
     * ItemDetailContainer => Detalle de producto, de cada producto individual.
-
-- [x] ItemDetail
-    *   ItemQuantitySelector => ContadorComp, nombrado ItemCount.
-    *   Description + precio + stock
-    *   AddItem Button => agregar al carrito
+    * ItemDetail
+        * ItemQuantitySelector => ContadorComp, nombrado ItemCount.
+        * Description + precio + stock
+        * AddItem Button => agregar al carrito
 
 - [x] CheckOut
     *   CartView => con renderizado condicional, si no hay productos muestra un mensaje y un botón que vuelve al Home para seguir comprando, sino muestra la lista de productos agregados + formulario para finalizar la compra.

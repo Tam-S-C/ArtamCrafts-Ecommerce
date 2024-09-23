@@ -56,7 +56,7 @@ export function CartProvider({ children }) {
   };
 
  
-  //Para eliminar TODOS los productos del carrito luego de realizada la compra
+  //Para eliminar TODOS los productos del carrito
   const clearAll = () => {
     setCart([]);
     setOrder(null);
