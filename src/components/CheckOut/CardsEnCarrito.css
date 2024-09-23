@@ -1,8 +1,10 @@
 .productosContenedor {
     display: grid;
-    margin: auto;
-    padding: auto;
+    margin: 0 auto;
+    padding: 0;
     gap: 16px;
+    align-items: center;
+    list-style: none;
   }
   
   .cardEnCarrito {
@@ -61,6 +63,10 @@
         grid-template-columns: 1fr 1fr;
     }
 
+    .tituloProd{
+      margin-left: 16px;
+    }
+
     .imgProducto {
         max-width: 110px; 
         border-radius: 8px; 
@@ -73,7 +79,7 @@
      }
 
      .tacho {
-        margin: 32px 60px;
+        margin: 32px 66px;
         padding: auto;
       }
   }
@@ -87,11 +93,11 @@
         max-width: 80px; 
         border-radius: 8px; 
         width: 100%; 
-        margin: 8px;
+        margin: 16px;
       }
 
     .cantCart {
-        margin: 8px;
+        margin: 16px;
      }
 
      .tacho {

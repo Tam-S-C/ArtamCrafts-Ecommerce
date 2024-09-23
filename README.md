@@ -45,15 +45,15 @@ vista de todos los productos en el Home ('/'), cada categoría con sus rutas con
     * ItemList => ItemsCard se le sumó un botón de Like + LocalStorage (más adelante se sumará botón al navBar con el listado de los favs seleccionados.)
     * ItemDetailContainer => Detalle de producto, de cada producto individual.
     * ItemDetail
-        * ItemQuantitySelector => ContadorComp, nombrado ItemCount.
-        * Description + precio + stock
-        * AddItem Button => agregar al carrito
+        * ItemQuantitySelector => ContadorComp, nombrado ItemCount
+        * Description + precio + stock (con funcion para que vaya bajando la cant de stock)
+        * AddItem Button => agregar al carrito con función IsInCart para verificar si ya hay producto de ese modelo en el carrito.
 
 - [x] CheckOut
-    *   CartView => con renderizado condicional, si no hay productos muestra un mensaje y un botón que vuelve al Home para seguir comprando, sino muestra la lista de productos agregados + formulario para finalizar la compra.
-    *   CheckOut / Brief => detalle de compra ya finalizada con los datos del usuario y generación de la orden que queda guardada en Firebase, borrado del carrito y botón para volver al Home.
-    *   UserInfo => con el fomulario.
-    *   CardsEnCarrito => detalle de cada ítem en la vista del carrito.
+    *   CartView => con renderizado condicional, si no hay productos muestra un mensaje y un botón que vuelve al Home para seguir comprando, sino muestra la lista de productos agregados + borrado total del carrito + formulario para finalizar la compra.
+    *   CheckOut / Brief => detalle de compra ya finalizada con los datos del usuario y generación de la orden que queda guardada en Firebase, borrado del carrito automático y botón para volver al Home.
+    *   UserInfo => con el fomulario para generar la orden que se guarda en firebase.
+    *   CardsEnCarrito => detalle de cada ítem en la vista del carrito con ItemCount (sólo el + y - sacando el "agregar carrito" con renderizado condicional), cantidad de stock, precio unitario y subtotal, y tacho para eliminar el ítem completo.
 
 - [x] Footer => componente extra para darle terminación a la web con links útiles + uso de memo / memoizing.
 

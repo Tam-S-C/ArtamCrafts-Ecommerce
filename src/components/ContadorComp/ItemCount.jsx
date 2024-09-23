@@ -4,7 +4,6 @@ import { CartContext } from '../../context/CartContext';
 import Swal from 'sweetalert2';
 
 export default function ItemCount({ product, initialCount = 1, showAddButton = true, onQuantityChange }) {
-
   const { addItem } = useContext(CartContext);
   const [cant, setCant] = useState(initialCount);
 
@@ -48,6 +47,7 @@ export default function ItemCount({ product, initialCount = 1, showAddButton = t
 
   return (
     <div>
+      <p className='stockDisp'>Stock disponible: {product.stock - cant}</p> 
       <div className="contenedorContador">
         <button className="contador" onClick={handleRestar}>-</button>
         <p className='stock'>{cant}</p>
