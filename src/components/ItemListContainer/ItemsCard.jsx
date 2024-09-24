@@ -17,38 +17,38 @@ export default function ItemsCard({ titulo, precio, imagen, id, category }) {
   const likeBtn = () => {
     const newLikeState = !isLiked;
     setIsLiked(newLikeState);
-   
+
     localStorage.setItem(localStorageKey, newLikeState);
   };
 
 
   return (
     <>
-        <div className='contCards'>
-          <article className='card'>
-            <h6>{titulo}</h6>
-            <img src={imagen} alt={titulo} width={200}/>
-            <br/>
+      <div className='contCards'>
+        <article className='card'>
+          <h6>{titulo}</h6>
+          <img src={imagen} alt={titulo} width={200} />
+          <br />
 
-            <section className="likeYprecio">
-              <h6>Precio: ${precio}</h6> 
+          <section className="likeYprecio">
+            <h6>Precio: ${precio}</h6>
 
-              <button onClick={likeBtn}>
-                <img
-                  src={isLiked ? likeON : likeOFF} 
-                  alt="like"
-                  width={24}
-                  className='like'
-                />
-              </button>
-
-            </section>
-
-            <button className='btnDetalles'>
-              <Link to={`/${category}/${id}`}>Ver detalles</Link>
+            <button onClick={likeBtn}>
+              <img
+                src={isLiked ? likeON : likeOFF}
+                alt="like"
+                width={24}
+                className='like'
+              />
             </button>
-          </article>
-        </div>
+
+          </section>
+
+          <button className='btnDetalles'>
+            <Link to={`/${category}/${id}`}>Ver detalles</Link>
+          </button>
+        </article>
+      </div>
     </>
   );
 }

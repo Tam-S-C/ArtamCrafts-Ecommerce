@@ -1,51 +1,49 @@
 .volver {
-    background-color:aquamarine;
-    color:black;
-    border-radius: 16px;
-    border: 2px solid transparent;
-    padding: 0.28em 1em;
-    font-size: 1em;
-    font-weight: 500;
-    font-family: inherit;
-    cursor: pointer;
-    transition: border-color 0.3s;
-    margin: auto;
-    width: 200px;
-    text-decoration: none;
-  }
-  
-  .volver:hover {
-    border-color: #00000089;
-    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.4)
-  }
+  background-color: aquamarine;
+  color: black;
+  border-radius: 16px;
+  border: 2px solid transparent;
+  padding: 0.28em 1em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.3s;
+  margin: auto;
+  width: 200px;
+  text-decoration: none;
+}
 
-  
-  .volver {
+.volver:hover {
+  border-color: #00000089;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+.volver {
   box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
-  }
+}
 
-  .vaciarCarrito {
-    background-color:aquamarine;
-    color:black;
-    border-radius: 16px;
-    border: 2px solid transparent;
-    padding: 0.28em 1em;
-    font-size: 1em;
-    font-weight: 500;
-    font-family: inherit;
-    cursor: pointer;
-    transition: border-color 0.3s;
-    margin: auto;
-    width: 200px;
-    text-decoration: none;
-  }
-  
-  .vaciarCarrito:hover {
-    border-color: #00000089;
-    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.4)
-  }
+.vaciarCarrito {
+  background-color: aquamarine;
+  color: black;
+  border-radius: 16px;
+  border: 2px solid transparent;
+  padding: 0.28em 1em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.3s;
+  margin: auto;
+  width: 200px;
+  text-decoration: none;
+}
 
-  
-  .vaciarCarrito {
+.vaciarCarrito:hover {
+  border-color: #00000089;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+.vaciarCarrito {
   box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
-  }
+}

@@ -6,14 +6,14 @@ import { doc, getDoc, getFirestore } from 'firebase/firestore';
 import { CartContext } from '../../context/CartContext.jsx';
 
 export default function ItemDetailContainer() {
-  const [product, setProduct] = useState(null); 
-  const [error, setError] = useState(null); 
+  const [product, setProduct] = useState(null);
+  const [error, setError] = useState(null);
   const { itemId } = useParams();
   const { cart, addItem } = useContext(CartContext);
 
   const onAdd = (cantidad) => {
     const productoConCantidad = { ...product, cantidad };
-    addItem(productoConCantidad); 
+    addItem(productoConCantidad);
   }
 
   useEffect(() => {
@@ -29,12 +29,12 @@ export default function ItemDetailContainer() {
         }
       })
       .catch((error) => {
-        setError("Error obteniendo el producto: " + error.message); 
+        setError("Error obteniendo el producto: " + error.message);
       });
-  }, [itemId]); 
+  }, [itemId]);
 
   if (error) {
-    return <p>{error}</p>; 
+    return <p>{error}</p>;
   }
 
   if (!product) {
@@ -43,16 +43,16 @@ export default function ItemDetailContainer() {
 
   return (
     <>
-      <hr/>
+      <hr />
       <div className='contenedorCards'>
         <article className="card">
           <h5>{product.titulo}</h5>
           <img src={product.imagen} alt={product.titulo} width={220} className='zoom' />
-          <br/>
+          <br />
           <h6>Precio: ${product.precio}</h6>
           <p>{product.descripcion}</p>
           <ItemCount product={product} precio={product.precio} Stock={product.stock} agregarAlCarrito={onAdd} />
-          <br/>
+          <br />
         </article>
       </div>
     </>

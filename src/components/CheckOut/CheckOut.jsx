@@ -24,13 +24,13 @@ export default function CheckOut() {
                                 <p>Cantidad: {item.quantity}</p>
                                 <p>Precio unitario: ${item.precio}</p>
                                 <p>Subtotal: ${item.precio * item.quantity}</p>
-                                <hr/>
+                                <hr />
                             </div>
                         ))}
                     </>
                     <br />
-                    <h4 style={{ fontFamily: 'monospace', fontWeight:'bold' }}>PRECIO FINAL: ${order.total}</h4>
-                    <hr/>
+                    <h4 style={{ fontFamily: 'monospace', fontWeight: 'bold' }}>PRECIO FINAL: ${order.total}</h4>
+                    <hr />
                     <br />
                     <h4>Datos del comprador:</h4>
                     <p><strong>Nombre Completo:</strong> {order.buyer.nombre}</p>
@@ -46,9 +46,9 @@ export default function CheckOut() {
             )}
 
             <br />
-            <p style={{ color: 'red', fontWeight:'bold' }}>No válido como factura.</p>
+            <p style={{ color: 'red', fontWeight: 'bold' }}>No válido como factura.</p>
             <br />
-            <hr/>
+            <hr />
             <br />
             <div>
                 <h5>Datos para realizar la transferencia:</h5>
@@ -56,14 +56,14 @@ export default function CheckOut() {
                 <p>Alias: ArtamCrafts</p>
                 <h6 style={{ color: 'red' }}> No te olvides de enviar tu comprobante con el pago realizado a
                     <a className='mail' href="mailto:artamcrafts@hotmail.com" target="_blank" rel="noopener noreferrer">artamcrafts@hotmail.com</a>
-                    <br/>
-                    Los productos <span style={{fontWeight:'bold'}}>no se enviarán</span> hasta que recibas por mail la confirmación <br/>de que hemos recibido tu comprobante de pago.
+                    <br />
+                    Los productos <span style={{ fontWeight: 'bold' }}>no se enviarán</span> hasta que recibas por mail la confirmación <br />de que hemos recibido tu comprobante de pago.
                 </h6>
             </div>
 
-            <br/>
-          <Link to={'/'} className='volver'>Volver al Home</Link>
-          <br/>
+            <br />
+            <Link to={'/'} className='volver'>Volver al Home</Link>
+            <br />
         </>
     );
 }

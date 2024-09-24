@@ -35,7 +35,7 @@ export default function CartView() {
           <br />
           <UserInfo carrito={cart} createNewOrder={createNewOrder} />
           <br />
-          
+
         </>
       )}
     </>

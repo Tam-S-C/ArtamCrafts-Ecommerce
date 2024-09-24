@@ -9,7 +9,7 @@ export default function CardsEnCarrito() {
 
   // Función para actualizar la cantidad en el carrito
   const handleQuantityChange = (item, newQuantity) => {
-    addItem(item, newQuantity - item.quantity); // Agregamos la diferencia de cantidad
+    addItem(item, newQuantity - item.quantity);
   };
 
   return (
@@ -32,7 +32,7 @@ export default function CardsEnCarrito() {
                 product={item}
                 initialCount={item.quantity}
                 showAddButton={false}
-                onQuantityChange={(newQuantity) => handleQuantityChange(item, newQuantity)} // Pasamos la función aquí
+                onQuantityChange={(newQuantity) => handleQuantityChange(item, newQuantity)}
               />
             </div>
 
@@ -49,7 +49,7 @@ export default function CardsEnCarrito() {
                   alt="Borrar Item"
                   className='tacho'
                   onClick={() => removeItem(item.id)}
-                /> 
+                />
               </button>
             </div>
           </div>

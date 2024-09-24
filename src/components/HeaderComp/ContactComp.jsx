@@ -7,7 +7,6 @@ export default function ContactComp() {
   const enviarFormulario = (event) => {
     event.preventDefault();
 
-    // SweetAlert2
     Swal.fire({
       icon: 'success',
       title: '¡Mensaje enviado con éxito!',

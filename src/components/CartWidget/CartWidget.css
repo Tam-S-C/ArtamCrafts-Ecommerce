@@ -1,21 +1,20 @@
 .cartEstilo {
-    width: 28px;
-    margin-left: 8px;
+  width: 28px;
+  margin-left: 8px;
 }
 
 .cartEstilo:hover {
-    width: 26px;
-    filter: drop-shadow(1px 2px 2px rgba(13, 208, 133, 2));
+  width: 26px;
+  filter: drop-shadow(1px 2px 2px rgba(13, 208, 133, 2));
 }
 
-
 .cartNumerito {
-    color: black;                
-    font-weight: bold;            
-    background-color: rgba(127, 255, 212, 0.549); 
-    border-radius: 50%;          
-    padding: 6px 14px;            
-    text-decoration: none;       
-    display: inline-block;
-    margin-left: 8px; 
-  }
+  color: black;
+  font-weight: bold;
+  background-color: rgba(127, 255, 212, 0.549);
+  border-radius: 50%;
+  padding: 6px 14px;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 8px;
+}

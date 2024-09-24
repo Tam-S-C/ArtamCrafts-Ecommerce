@@ -12,11 +12,11 @@ export function CartProvider({ children }) {
     const orders = collection(db, 'order');
 
     addDoc(orders, order).then((snapshot) => {
-        setOrder({ id: snapshot.id, ...order });
-        const getDoc = doc(db, 'order', snapshot.id);
-        updateDoc(getDoc, { orderId: snapshot.id });
+      setOrder({ id: snapshot.id, ...order });
+      const getDoc = doc(db, 'order', snapshot.id);
+      updateDoc(getDoc, { orderId: snapshot.id });
     });
-};
+  };
 
 
   const addItem = (item, quantity) => {
@@ -27,7 +27,7 @@ export function CartProvider({ children }) {
           const newQuantity = prod.quantity + quantity;
 
           if (newQuantity > 10 || newQuantity > prod.stock) {
-            return prod; 
+            return prod;
           } else {
             return { ...prod, quantity: newQuantity };
           }
@@ -49,13 +49,13 @@ export function CartProvider({ children }) {
   };
 
 
-   //Para eliminar solo un producto con el tacho
+  //Para eliminar solo un producto con el tacho
   const removeItem = (id) => {
     const updatedCart = cart.filter(prod => prod.id !== id);
     setCart(updatedCart);
   };
 
- 
+
   //Para eliminar TODOS los productos del carrito
   const clearAll = () => {
     setCart([]);

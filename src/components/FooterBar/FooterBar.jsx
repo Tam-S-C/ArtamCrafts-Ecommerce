@@ -6,7 +6,7 @@ import youtubeIcon from '../../assets/imgIcons/Icono_YouTube.png';
 import linkedinIcon from '../../assets/imgIcons/Icono_Linkedin.png';
 import githubIcon from '../../assets/imgIcons/Icono_GitHub.png';
 import mailIcon from '../../assets/imgIcons/Icono_mail.png';
-import {memo} from 'react';
+import { memo } from 'react';
 
 
 
@@ -18,7 +18,7 @@ export default memo(function FooterBar() {
                 <br />
                 <p>ArTamCrafts® Copyrights 2019-2029 </p>
                 <p style={{ fontWeight: "bold", fontFamily: "monospace", fontSize: 14 }}>
-                    By Tamara S. Canzobre <br/>Realizado con React.js <img src={imgReact} width={16} />
+                    By Tamara S. Canzobre <br />Realizado con React.js <img src={imgReact} width={16} />
                 </p>
                 <div className='iconosFooter'>
                     <a href="https://www.instagram.com/artamcrafts/" target="_blank" rel="noopener noreferrer">
@@ -47,7 +47,7 @@ export default memo(function FooterBar() {
                 </div>
                 <br />
             </footer>
-            <br/>
+            <br />
         </>
     );
 });

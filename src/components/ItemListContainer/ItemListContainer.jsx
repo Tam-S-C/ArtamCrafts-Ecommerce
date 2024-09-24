@@ -17,23 +17,23 @@ export default function ItemsComp() {
 
   useEffect(() => {
     const db = getFirestore();
-  
+
     if (categoryId) {
       const productsCollection = query(collection(db, 'productos'), where('category', '==', categoryId));
-  
+
       getDocs(productsCollection).then((snapshot) => {
         if (snapshot.size === 0) {
           return <h3>No hay productos</h3>;
         }
         setAllProducts(snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() })));
-        setLoading(false); 
+        setLoading(false);
       }).catch(() => {
-        setLoading(false); 
+        setLoading(false);
       });
-  
+
     } else {
       const productsCollection = collection(db, 'productos');
-  
+
       getDocs(productsCollection).then((snapshot) => {
         if (snapshot.size === 0) {
           return <h3>No hay productos</h3>;
@@ -45,44 +45,44 @@ export default function ItemsComp() {
       });
     }
   }, [categoryId]);
-  
-  
+
+
 
 
   return (
     <>
       <hr />
 
-      {loading ? 
-      ( <ReactLoading 
-        type="spinningBubbles" 
-        color="black" 
-        width={80} 
-        className='load'/> 
-      ) : (
-      <div>
-      <br />
+      {loading ?
+        (<ReactLoading
+          type="spinningBubbles"
+          color="black"
+          width={80}
+          className='load' />
+        ) : (
+          <div>
+            <br />
 
-        <h2 style={{ fontFamily: 'monospace', textTransform: 'uppercase' }}>
-          {categoryId ? categoryId 
-          : 'TODOS LOS PRODUCTOS'}
-        </h2>
+            <h2 style={{ fontFamily: 'monospace', textTransform: 'uppercase' }}>
+              {categoryId ? categoryId
+                : 'TODOS LOS PRODUCTOS'}
+            </h2>
 
-      <section className='centrarCards'>
-        {allProducts.map((product) => (
-          <ItemsCard 
-            key={product.id} 
-            titulo={product.titulo} 
-            precio={product.precio} 
-            imagen={product.imagen} 
-            id={product.id} 
-            category={product.category}
-          />
-        ))}
-      </section> 
+            <section className='centrarCards'>
+              {allProducts.map((product) => (
+                <ItemsCard
+                  key={product.id}
+                  titulo={product.titulo}
+                  precio={product.precio}
+                  imagen={product.imagen}
+                  id={product.id}
+                  category={product.category}
+                />
+              ))}
+            </section>
 
-      </div>
-    )}
+          </div>
+        )}
     </>
   );
 }

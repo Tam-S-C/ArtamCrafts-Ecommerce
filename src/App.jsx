@@ -17,31 +17,31 @@ function App() {
   return (
     <>
       <BrowserRouter basename="/ArtamCrafts-Ecommerce">
-        
+
         <div className='contenedorTotal'>
           <HeaderComp />
-          
+
           <CartProvider>
             <NavBar />
 
-          <Routes>
-            <Route exact path="/contact" element={<ContactComp />}/>
-            <Route exact path="/sesion" element={<SesionComp />}/>
-            <Route exact path="" element={<ItemListContainer />}/>
-            <Route exact path="/category/:categoryId" element={<ItemListContainer />}/>
-            <Route exact path="/item/:itemId" element={<ItemDetailContainer />} />
-            <Route exact path="/:categoryId/:itemId" element={<ItemDetailContainer />} />
-            <Route exact path='/cart' element={<CartView />} />
-            <Route exact path='/checkOut' element={<CheckOut />} />
-           </Routes>
+            <Routes>
+              <Route exact path="/contact" element={<ContactComp />} />
+              <Route exact path="/sesion" element={<SesionComp />} />
+              <Route exact path="" element={<ItemListContainer />} />
+              <Route exact path="/category/:categoryId" element={<ItemListContainer />} />
+              <Route exact path="/item/:itemId" element={<ItemDetailContainer />} />
+              <Route exact path="/:categoryId/:itemId" element={<ItemDetailContainer />} />
+              <Route exact path='/cart' element={<CartView />} />
+              <Route exact path='/checkOut' element={<CheckOut />} />
+            </Routes>
 
           </CartProvider>
 
-         <FooterBar />
+          <FooterBar />
         </div>
 
       </BrowserRouter>
-    
+
     </>
   );
 }

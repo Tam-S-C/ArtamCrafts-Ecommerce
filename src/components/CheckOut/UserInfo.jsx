@@ -68,49 +68,49 @@ const UserInfo = ({ carrito, createNewOrder }) => {
     return (
         <div className='containerCarrito'>
             <h5>Completa los siguientes datos para finalizar la compra:</h5>
-            {error && <p style={{fontSize:'18px', fontWeight:'bold', color: 'red' }}>{error}</p>}
+            {error && <p style={{ fontSize: '18px', fontWeight: 'bold', color: 'red' }}>{error}</p>}
             <div className='formulario'>
-                <input 
-                    type='text' 
-                    placeholder='Nombre Completo' 
-                    value={nombre} 
-                    onChange={handleNombreChange} 
-                    required 
-                />
-                <input 
+                <input
                     type='text'
-                    placeholder='DNI' 
-                    value={dni} 
-                    onChange={handleDniChange} 
-                    required 
+                    placeholder='Nombre Completo'
+                    value={nombre}
+                    onChange={handleNombreChange}
+                    required
                 />
-                <input 
-                    type='email' 
-                    placeholder='Email' 
-                    value={email} 
-                    onChange={(e) => setEmail(e.target.value)} 
-                    required 
+                <input
+                    type='text'
+                    placeholder='DNI'
+                    value={dni}
+                    onChange={handleDniChange}
+                    required
                 />
-                <input 
-                    type='text' 
-                    placeholder='Dirección' 
-                    value={direccion} 
-                    onChange={(e) => setDireccion(e.target.value)} 
-                    required 
+                <input
+                    type='email'
+                    placeholder='Email'
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    required
                 />
-                <input 
-                    type='text' 
-                    placeholder='Localidad' 
-                    value={localidad} 
-                    onChange={(e) => setLocalidad(e.target.value)} 
-                    required 
+                <input
+                    type='text'
+                    placeholder='Dirección'
+                    value={direccion}
+                    onChange={(e) => setDireccion(e.target.value)}
+                    required
                 />
-                <input 
-                    type='text' 
-                    placeholder='Código Postal' 
-                    value={cp} 
-                    onChange={(e) => setCP(e.target.value)} 
-                    required 
+                <input
+                    type='text'
+                    placeholder='Localidad'
+                    value={localidad}
+                    onChange={(e) => setLocalidad(e.target.value)}
+                    required
+                />
+                <input
+                    type='text'
+                    placeholder='Código Postal'
+                    value={cp}
+                    onChange={(e) => setCP(e.target.value)}
+                    required
                 />
             </div>
             <br />
@@ -119,8 +119,8 @@ const UserInfo = ({ carrito, createNewOrder }) => {
                 <p>CVU: 0000003100001777492223</p>
                 <p>Alias: ArtamCrafts</p>
                 <h6 style={{ color: 'red' }}> No te olvides de enviar tu comprobante con el pago realizado a
-                    <a className='mail' href="mailto:artamcrafts@hotmail.com" target="_blank" rel="noopener noreferrer"> 
-                    artamcrafts@hotmail.com
+                    <a className='mail' href="mailto:artamcrafts@hotmail.com" target="_blank" rel="noopener noreferrer">
+                        artamcrafts@hotmail.com
                     </a>
                 </h6>
             </div>

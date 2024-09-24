@@ -57,6 +57,7 @@ vista de todos los productos en el Home ('/'), cada categoría con sus rutas con
 
 - [x] Footer => componente extra para darle terminación a la web con links útiles + uso de memo / memoizing.
 
+
 ---
 
 > [!NOTE]

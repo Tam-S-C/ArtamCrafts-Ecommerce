@@ -1,43 +1,42 @@
 .contenedorContador {
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-    gap: 1rem; 
-    box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  box-sizing: border-box;
 }
 
-
 .contador {
-    background-color: rgb(143, 255, 218);
-    color:black;
-    border-radius: 16px;
-    border: 2px solid transparent;
-    padding: 0.3em 1em;
-    font-size: 1em;
-    font-weight: 500;
-    font-family: inherit;
-    cursor: pointer;
-    transition: border-color 0.3s;
-    box-sizing: border-box;
-    margin: 4px ;
+  background-color: rgb(143, 255, 218);
+  color: black;
+  border-radius: 16px;
+  border: 2px solid transparent;
+  padding: 0.3em 1em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.3s;
+  box-sizing: border-box;
+  margin: 4px;
 }
 
 .contador:hover {
-    border-color: #00000089;
-    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.4)
-  }
-  
-  .contador:active {
-    transform: scale(0.97);
-    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.4);
-  }
-  
-  .contador:focus,
-  .contador:focus-visible {
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
-  }
+  border-color: #00000089;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.4);
+}
 
-  .contador {
+.contador:active {
+  transform: scale(0.97);
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+.contador:focus,
+.contador:focus-visible {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+}
+
+.contador {
   box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
 }
 
@@ -47,6 +46,6 @@
   font-size: 16px;
 }
 
-.stockDisp{
+.stockDisp {
   margin-left: 16px;
 }

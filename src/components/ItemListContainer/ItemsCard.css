@@ -1,7 +1,7 @@
 .contCards {
   display: grid;
   margin: auto;
-  float:inline-start;
+  float: inline-start;
   padding: 10px;
 }
 
@@ -10,14 +10,14 @@
   border-radius: 16px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
   max-width: 300px;
-  width: 100%; 
+  width: 100%;
   text-align: center;
 }
 
 .card img {
-  margin: 0 auto; 
+  margin: 0 auto;
   max-width: 100%;
-  border-radius: 8px; 
+  border-radius: 8px;
 }
 
 .btnDetalles {
@@ -72,7 +72,7 @@
 }
 
 button {
-  background: none; 
+  background: none;
   border: none;
   cursor: pointer;
 }
@@ -87,11 +87,11 @@ button:focus {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.load{
+.load {
   margin: auto;
 }
 
-@media (max-width: 1300px){
+@media (max-width: 1300px) {
   .centrarCards {
     display: grid;
     margin: auto;
@@ -99,7 +99,7 @@ button:focus {
   }
 }
 
-@media (max-width: 1000px){
+@media (max-width: 1000px) {
   .centrarCards {
     display: grid;
     margin: auto;
@@ -107,7 +107,7 @@ button:focus {
   }
 }
 
-@media (max-width: 700px){
+@media (max-width: 700px) {
   .centrarCards {
     display: grid;
     margin: auto;

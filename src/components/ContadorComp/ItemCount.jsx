@@ -28,8 +28,8 @@ export default function ItemCount({ product, initialCount = 1, showAddButton = t
   };
 
   const agregarAlCarrito = () => {
-    addItem(product, cant); 
-    itemAgregado(); 
+    addItem(product, cant);
+    itemAgregado();
   };
 
   const itemAgregado = () => {
@@ -47,7 +47,7 @@ export default function ItemCount({ product, initialCount = 1, showAddButton = t
 
   return (
     <div>
-      <p className='stockDisp'>Stock disponible: {product.stock - cant}</p> 
+      <p className='stockDisp'>Stock disponible: {product.stock - cant}</p>
       <div className="contenedorContador">
         <button className="contador" onClick={handleRestar}>-</button>
         <p className='stock'>{cant}</p>

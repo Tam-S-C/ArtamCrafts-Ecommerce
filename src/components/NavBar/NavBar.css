@@ -1,28 +1,27 @@
 .barraNavegacion {
-    display: flex;
-    flex-direction: row;
-    justify-content:center;
-    align-items: center;
-    gap: 16px;
-    margin: 5px;
-    max-height:3em;
-    padding: 2px;
-  }
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin: 5px;
+  max-height: 3em;
+  padding: 2px;
+}
 
-
-  @media (max-width: 650px) {
-    .barraNavegacion {
-      padding: 16px;
-      gap: 8px;
-      font-size: small;
-    }
+@media (max-width: 650px) {
+  .barraNavegacion {
+    padding: 16px;
+    gap: 8px;
+    font-size: small;
   }
+}
 
-  @media (max-width: 500px) {
-    .barraNavegacion {
-      margin: 8px 0 8px 0;
-      padding: 16px;
-      gap: 8px;
-      font-size: small;
-    }
+@media (max-width: 500px) {
+  .barraNavegacion {
+    margin: 8px 0 8px 0;
+    padding: 16px;
+    gap: 8px;
+    font-size: small;
   }
+}
