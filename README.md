@@ -23,9 +23,33 @@
 
 ---
 
-> [!NOTE]
-> ENTREGA FINAL
+> [!IMPORTANT]
+> Herramientas Utilizadas:
 
+* JSX - REACT JS
+* React-Router-Dom => Para gestionar la navegación de las rutas de la webApp.
+* React-Loading => Uso de Loading en el primer renderizado de la web para la carga de todos los productos.
+* HOOKS => Algunos usados: useState, useParams, useContext, useEffect.
+* Uso de Props
+* CSS => Para dar los estilos.
+* HTML => Uso de forma mínima en el index y en las etiquetas semánticas junto a la escritura en jsx.
+* JavaScript => Para la lógica de la aplicación escrito como jsx.
+* Vite => Como el servidor de desarrollo.
+* Firebase => Para guardar las órdenes de compra con la info de los usuarios, y la subida de los productos.
+* SweetAlert2 => Uso de librería para el aviso con alerta de "ítem agregado al carrito".
+
+
+> [!NOTE]
+> ESTRUCTURA - ENTREGA FINAL
+
+
+- [x] Carpeta *public/* con archivos mínimos como logos y favicon.
+
+- [x] Directorio *src/* con la carpeta *assets/* con las imágenes de íconos, carpeta de *components/*, *context/* y archivos principales para la iniciar la app (main.jsx, App.jsx e Index.html), documentación, como este mismo *Readme.md*, y de configuraciones.
+
+> Components/
+
+- [x] BtnComp => Componente para los botones principales.
 
 - [x] Header => con LOGO(con link al Home '/') + botones extras (Contacto + Sesión + Buscador).
 
@@ -34,14 +58,16 @@
 - [x] CartWidget => el número se desmonta cuando no hay productos agregados, 
 pero elegí que la imagen del carrito quede siempre renderizada.
 
-- [x] CartContext => uso de useContext/Provider.
+- [x] CheckOut
+    *   CartView => con renderizado condicional, si no hay productos muestra un mensaje y un botón que vuelve al *Home* para seguir comprando, sino muestra la lista de productos agregados + botón para el borrado total del carrito + formulario para finalizar la compra.
+    *   CheckOut / Brief => detalle de compra ya finalizada con los datos del usuario y generación de la orden que queda guardada en Firebase, borrado del carrito automático y botón para volver al *Home*.
+    *   UserInfo => con el fomulario para generar la orden que se guarda en Firebase, con validaciones de los inputs.
+    *   CardsEnCarrito => detalle de cada ítem en la vista del carrito con ItemCount (sólo el + y - sacando el "agregar carrito" con renderizado condicional), cantidad de stock, precio unitario y subtotal, e ícono de tacho para eliminar el ítem completo.
 
 - [x] Catálogo => de productos, separados por categorías y a su vez, 
 vista de todos los productos en el Home ('/'), cada categoría con sus rutas con React-Router-Dom(rutas en App.jsx / NavBar.jsx).
 
-- [x] Loading en el primer renderizado de la web con React-Loading.
-
-- [x] ItemListContainer => contiene a todas las Cards con sus datos.
+- [x] ItemListContainer => contenedor de todas las Cards con sus datos.
     * ItemList => ItemsCard se le sumó un botón de Like + LocalStorage (más adelante se sumará botón al navBar con el listado de los favs seleccionados.)
     * ItemDetailContainer => Detalle de producto, de cada producto individual.
     * ItemDetail
@@ -49,14 +75,11 @@ vista de todos los productos en el Home ('/'), cada categoría con sus rutas con
         * Description + precio + stock (con funcion para que vaya bajando la cant de stock)
         * AddItem Button => agregar al carrito con función IsInCart para verificar si ya hay producto de ese modelo en el carrito.
 
-- [x] CheckOut
-    *   CartView => con renderizado condicional, si no hay productos muestra un mensaje y un botón que vuelve al Home para seguir comprando, sino muestra la lista de productos agregados + borrado total del carrito + formulario para finalizar la compra.
-    *   CheckOut / Brief => detalle de compra ya finalizada con los datos del usuario y generación de la orden que queda guardada en Firebase, borrado del carrito automático y botón para volver al Home.
-    *   UserInfo => con el fomulario para generar la orden que se guarda en firebase.
-    *   CardsEnCarrito => detalle de cada ítem en la vista del carrito con ItemCount (sólo el + y - sacando el "agregar carrito" con renderizado condicional), cantidad de stock, precio unitario y subtotal, y tacho para eliminar el ítem completo.
-
 - [x] Footer => componente extra para darle terminación a la web con links útiles + uso de memo / memoizing.
 
+---
+
+- [x] CartContext => uso de useContext/Provider para poder usar las funciones en los componentes hijos.
 
 ---
 
@@ -92,7 +115,28 @@ vista de todos los productos en el Home ('/'), cada categoría con sus rutas con
   
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh</h6>
 
-Correr web con:
-* npm run dev
-O link del deploy:
+---
+
+> Correr web / Instalación
+
+* Clonar el repositorio: bash git clone https://github.com/Tam-S-C/ArtamCrafts-Ecommerce.git
+* Instalar las dependencias: npm install
+* Iniciar la aplicación: npm run dev
+
+O link para desplegar la WebApp:
 * [DEPLOY](https://tam-s-c.github.io/ArtamCrafts-Ecommerce/) 
+
+---
+
+> CAPTURAS
+
+![Home](src\assets\capturas\home.png)
+![Categorías](src\assets\capturas\catAgendas.png)
+![Contacto](src\assets\capturas\contacto.png)
+![Sesion](src\assets\capturas\sesion.png)
+![Carrito Vacío](src\assets\capturas\carritoVacio.png)
+![Detalle](src\assets\capturas\detalle.png)
+![Alerta](src\assets\capturas\alerta.png)
+![Carrito](src\assets\capturas\carrito.png)
+![Form](src\assets\capturas\form.png)
+![Brief](src\assets\capturas\brief.png)
