@@ -38,14 +38,19 @@
 * Firebase => Para guardar las órdenes de compra con la info de los usuarios, y la subida de los productos.
 * SweetAlert2 => Uso de librería para el aviso con alerta de "ítem agregado al carrito".
 
+---
 
 > [!NOTE]
 > ESTRUCTURA - ENTREGA FINAL
 
 
-- [x] Carpeta *public/* con archivos mínimos como logos y favicon.
+- [x] Carpeta *public/* con archivos mínimos como logos, capturas y favicon.
 
-- [x] Directorio *src/* con la carpeta *assets/* con las imágenes de íconos, carpeta de *components/*, *context/* y archivos principales para la iniciar la app (main.jsx, App.jsx e Index.html), documentación, como este mismo *Readme.md*, y de configuraciones.
+- [x] Directorio *src/* con la carpeta *assets/* con las imágenes de íconos, carpeta de *components/* + *context/* y archivos principales para la iniciar la app (main.jsx, App.jsx e Index.html)
+
+- [x] Carpeta principal con la documentación, como este mismo *Readme.md*, y archivos de configuraciones.
+
+- [x] CartContext => uso de useContext/Provider para poder usar las funciones en los componentes hijos.
 
 > Components/
 
@@ -77,9 +82,6 @@ vista de todos los productos en el Home ('/'), cada categoría con sus rutas con
 
 - [x] Footer => componente extra para darle terminación a la web con links útiles + uso de memo / memoizing.
 
----
-
-- [x] CartContext => uso de useContext/Provider para poder usar las funciones en los componentes hijos.
 
 ---
 
@@ -130,13 +132,13 @@ O link para desplegar la WebApp:
 
 > CAPTURAS
 
-![Home](src\assets\capturas\home.png)
-![Categorías](src\assets\capturas\catAgendas.png)
-![Contacto](src\assets\capturas\contacto.png)
-![Sesion](src\assets\capturas\sesion.png)
-![Carrito Vacío](src\assets\capturas\carritoVacio.png)
-![Detalle](src\assets\capturas\detalle.png)
-![Alerta](src\assets\capturas\alerta.png)
-![Carrito](src\assets\capturas\carrito.png)
-![Form](src\assets\capturas\form.png)
-![Brief](src\assets\capturas\brief.png)
+![Home](public\capturas\home.png)
+![Categorías](public\capturas\catAgendas.png)
+![Contacto](public\capturas\contacto.png)
+![Sesion](public\capturas\sesion.png)
+![Carrito Vacío](public\capturas\carritoVacio.png)
+![Detalle](public\capturas\detalle.png)
+![Alerta](public\capturas\alerta.png)
+![Carrito](public\capturas\carrito.png)
+![Form](public\capturas\form.png)
+![Brief](public\capturas\brief.png)
