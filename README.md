@@ -132,15 +132,16 @@ O link para desplegar la WebApp:
 
 > CAPTURAS
 
-![Home](https://github.com/Tam-S-C/ArtamCrafts-Ecommerce/blob/main/public/capturas/home.png?raw=true)
-![Categorías](https://github.com/Tam-S-C/ArtamCrafts-Ecommerce/blob/main/public/capturas/catAgendas.png?raw=true)
-![Contacto](https://github.com/Tam-S-C/ArtamCrafts-Ecommerce/blob/main/public/capturas/contacto.png?raw=true)
-![Sesion](https://github.com/Tam-S-C/ArtamCrafts-Ecommerce/blob/main/public/capturas/sesion.png?raw=true)
-![Carrito Vacío](https://github.com/Tam-S-C/ArtamCrafts-Ecommerce/blob/main/public/capturas/carritoVacio.png?raw=true)
-![Detalle](https://github.com/Tam-S-C/ArtamCrafts-Ecommerce/blob/main/public/capturas/detalle.png?raw=true)
-![Alerta](https://github.com/Tam-S-C/ArtamCrafts-Ecommerce/blob/main/public/capturas/alerta.png?raw=true)
-![Carrito](https://github.com/Tam-S-C/ArtamCrafts-Ecommerce/blob/main/public/capturas/carrito.png?raw=true)
-![Form](https://github.com/Tam-S-C/ArtamCrafts-Ecommerce/blob/main/public/capturas/form.png?raw=true)
-![Brief](https://github.com/Tam-S-C/ArtamCrafts-Ecommerce/blob/main/public/capturas/brief.png?raw=true)
+| **Home** | **Categoría: Agendas** | **Contacto** | **Inicio de Sesión** | **Carrito Vacío** |
+|:--:|:--:|:--:|:--:|:--:|
+| ![Home](https://github.com/Tam-S-C/ArtamCrafts-Ecommerce/blob/main/src/assets/capturas/home.png?raw=true) | ![Categorías](https://github.com/Tam-S-C/ArtamCrafts-Ecommerce/blob/main/src/assets/capturas/catAgendas.png?raw=true) | ![Contacto](https://github.com/Tam-S-C/ArtamCrafts-Ecommerce/blob/main/src/assets/capturas/contacto.png?raw=true) | ![Sesion](https://github.com/Tam-S-C/ArtamCrafts-Ecommerce/blob/main/src/assets/capturas/sesion.png?raw=true) | ![Carrito Vacío](https://github.com/Tam-S-C/ArtamCrafts-Ecommerce/blob/main/src/assets/capturas/carritoVacio.png?raw=true) |
+
+<br>
+
+| **Detalle del Producto** | **Alerta "Ítem agregado con Éxito"** | **Carrito** | **Formulario** | **CheckOut: Brief** |
+|:--:|:--:|:--:|:--:|:--:|
+| ![Detalle](https://github.com/Tam-S-C/ArtamCrafts-Ecommerce/blob/main/src/assets/capturas/detalle.png?raw=true) | ![Alerta](https://github.com/Tam-S-C/ArtamCrafts-Ecommerce/blob/main/src/assets/capturas/alerta.png?raw=true) | ![Carrito](https://github.com/Tam-S-C/ArtamCrafts-Ecommerce/blob/main/src/assets/capturas/carrito.png?raw=true) | ![Form](https://github.com/Tam-S-C/ArtamCrafts-Ecommerce/blob/main/src/assets/capturas/form.png?raw=true) | ![Brief](https://github.com/Tam-S-C/ArtamCrafts-Ecommerce/blob/main/src/assets/capturas/brief.png?raw=true) |
+
+
 
 
