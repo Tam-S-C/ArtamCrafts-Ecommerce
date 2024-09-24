@@ -132,13 +132,13 @@ O link para desplegar la WebApp:
 
 > CAPTURAS
 
-![Home](public\capturas\home.png)
-![Categorías](public\capturas\catAgendas.png)
-![Contacto](public\capturas\contacto.png)
-![Sesion](public\capturas\sesion.png)
-![Carrito Vacío](public\capturas\carritoVacio.png)
-![Detalle](public\capturas\detalle.png)
-![Alerta](public\capturas\alerta.png)
-![Carrito](public\capturas\carrito.png)
-![Form](public\capturas\form.png)
-![Brief](public\capturas\brief.png)
+![Home](public/capturas/home.png)
+![Categorías](public/capturas/catAgendas.png)
+![Contacto](public/capturas/contacto.png)
+![Sesion](public/capturas/sesion.png)
+![Carrito Vacío](public/capturas/carritoVacio.png)
+![Detalle](public/capturas/detalle.png)
+![Alerta](public/capturas/alerta.png)
+![Carrito](public/capturas/carrito.png)
+![Form](public/capturas/form.png)
+![Brief](public/capturas/brief.png)
