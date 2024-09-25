@@ -11,6 +11,8 @@
 
 * [MP4](https://drive.google.com/file/d/1pySEPA8fCn9KWKmDcm-UkP3RCABIpMAZ/view?usp=sharing)
 
+<br>
+
 ---
 
 > Curso: React JS - CoderHouse - Comisión 60020
@@ -22,6 +24,8 @@
 * Tutor Adjunto: Dario Rodriguez
 
 ---
+
+<br>
 
 > [!IMPORTANT]
 > Herramientas Utilizadas:
@@ -38,6 +42,7 @@
 * Firebase => Para guardar las órdenes de compra con la info de los usuarios, y la subida de los productos.
 * SweetAlert2 => Uso de librería para el aviso con alerta de "ítem agregado al carrito".
 
+<br>
 ---
 
 > [!NOTE]
@@ -129,8 +134,11 @@ O link para desplegar la WebApp:
 * [DEPLOY](https://tam-s-c.github.io/ArtamCrafts-Ecommerce/) 
 
 ---
+<br>
 
 > CAPTURAS
+
+<br>
 
 | **Home** | **Categoría: Agendas** | **Contacto** | **Inicio de Sesión** | **Carrito Vacío** |
 |:--:|:--:|:--:|:--:|:--:|
@@ -142,6 +150,12 @@ O link para desplegar la WebApp:
 |:--:|:--:|:--:|:--:|:--:|
 | ![Detalle](https://github.com/Tam-S-C/ArtamCrafts-Ecommerce/blob/main/src/assets/capturas/detalle.png?raw=true) | ![Alerta](https://github.com/Tam-S-C/ArtamCrafts-Ecommerce/blob/main/src/assets/capturas/alerta.png?raw=true) | ![Carrito](https://github.com/Tam-S-C/ArtamCrafts-Ecommerce/blob/main/src/assets/capturas/carrito.png?raw=true) | ![Form](https://github.com/Tam-S-C/ArtamCrafts-Ecommerce/blob/main/src/assets/capturas/form.png?raw=true) | ![Brief](https://github.com/Tam-S-C/ArtamCrafts-Ecommerce/blob/main/src/assets/capturas/brief.png?raw=true) |
 
+<br>
+---
+<br>
 
+<h4>Gracias por ver mi proyecto!<h4>
+*Tam S. C.*
 
+<br>
 
