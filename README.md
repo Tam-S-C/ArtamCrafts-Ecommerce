@@ -154,8 +154,8 @@ O link para desplegar la WebApp:
 ---
 <br>
 
-<h4>Gracias por ver mi proyecto!<h4>
-*Tam S. C.*
+<h3>Gracias por ver mi proyecto! :sparkling_heart: <h3>
+<h5>Tam S. C.</h5>
 
 <br>
-
+---
