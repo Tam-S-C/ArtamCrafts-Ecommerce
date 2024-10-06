@@ -11,6 +11,8 @@
 
 * [MP4](https://drive.google.com/file/d/1pySEPA8fCn9KWKmDcm-UkP3RCABIpMAZ/view?usp=sharing)
 
+* .[Certificado-TopTen](https://www.coderhouse.com/ar/certificados/66f716c14adcbaf2695292c5?lang=es)
+
 <br>
 
 ---
@@ -45,8 +47,9 @@
 <br>
 ---
 
-> [!NOTE]
-> ESTRUCTURA - ENTREGA FINAL
+> [!NOTE] 
+> ESTRUCTURA
+> ENTREGA FINAL => 100%
 
 
 - [x] Carpeta *public/* con archivos mínimos como logos, capturas y favicon.
