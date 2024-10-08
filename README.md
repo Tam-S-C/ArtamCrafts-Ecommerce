@@ -3,17 +3,14 @@
 
 > LINKS:
 
-* [DEPLOY](https://tam-s-c.github.io/ArtamCrafts-Ecommerce/) 
+* [DEPLOY / WEB](https://tam-s-c.github.io/ArtamCrafts-Ecommerce/) 
 
 * [GitHub](https://github.com/Tam-S-C/ArtamCrafts-Ecommerce)
 
 * [GIF](https://drive.google.com/file/d/1ThdLtC8saNLauPwB9nOo53UXHFYm10E-/view?usp=sharing)
 
 * [MP4](https://drive.google.com/file/d/1pySEPA8fCn9KWKmDcm-UkP3RCABIpMAZ/view?usp=sharing)
-
-* .[Certificado-TopTen](https://www.coderhouse.com/ar/certificados/66f716c14adcbaf2695292c5?lang=es)
-
-<br>
+  
 
 ---
 
@@ -26,8 +23,6 @@
 * Tutor Adjunto: Dario Rodriguez
 
 ---
-
-<br>
 
 > [!IMPORTANT]
 > Herramientas Utilizadas:
@@ -44,7 +39,7 @@
 * Firebase => Para guardar las órdenes de compra con la info de los usuarios, y la subida de los productos.
 * SweetAlert2 => Uso de librería para el aviso con alerta de "ítem agregado al carrito".
 
-<br>
+
 ---
 
 > [!NOTE] 
@@ -117,14 +112,6 @@ vista de todos los productos en el Home ('/'), cada categoría con sus rutas con
 - [x] Uso de Boostrap en íconos carrito y sesión. 
 
 
----------
-
-<h3>React + Vite</h3> 
-
-<h6>This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-  
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh</h6>
-
 ---
 
 > Correr web / Instalación
@@ -134,10 +121,9 @@ vista de todos los productos en el Home ('/'), cada categoría con sus rutas con
 * Iniciar la aplicación: npm run dev
 
 O link para desplegar la WebApp:
-* [DEPLOY](https://tam-s-c.github.io/ArtamCrafts-Ecommerce/) 
+* [DEPLOY / WEB](https://tam-s-c.github.io/ArtamCrafts-Ecommerce/) 
 
 ---
-<br>
 
 > CAPTURAS
 
@@ -159,6 +145,16 @@ O link para desplegar la WebApp:
 
 <h3>Gracias por ver mi proyecto! :sparkling_heart: <h3>
 <h5>Tam S. C.</h5>
+<br>
+   
+[Certificado-TopTen](https://www.coderhouse.com/ar/certificados/66f716c14adcbaf2695292c5?lang=es) 
+  
+<br>
+   
+| **React JS** |
+|:--:|
+|![React JS](https://media.licdn.com/dms/image/v2/D4D2DAQElCZ9deok7oQ/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1728162521293?e=1728878400&v=beta&t=9Sc47SYH7H8VmoM7ms_WnDFYuQWoMoJWhT5RiH9m5jc)|
+
 
 <br>
----
+
