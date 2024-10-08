@@ -39,6 +39,13 @@
 * Firebase => Para guardar las órdenes de compra con la info de los usuarios, y la subida de los productos.
 * SweetAlert2 => Uso de librería para el aviso con alerta de "ítem agregado al carrito".
 
+![image](https://github.com/user-attachments/assets/09bb3851-8f1c-44b2-a0f1-330181e7aad1)
+![image](https://github.com/user-attachments/assets/e27f4435-1fa4-43b0-93a4-9f2da115d562)
+![image](https://github.com/user-attachments/assets/86312436-d34d-45ff-bbd7-f801a74c985b)
+![image](https://github.com/user-attachments/assets/1496e492-825a-4e31-81ca-8b26836fdbce) 
+![image](https://github.com/user-attachments/assets/a4735e28-43b3-4e29-9330-7ee1166efd8c)
+![image](https://github.com/user-attachments/assets/e8be5317-335b-42f1-a439-aeea4ae937f1)
+
 
 ---
 
