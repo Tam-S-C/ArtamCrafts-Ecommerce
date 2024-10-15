@@ -160,7 +160,7 @@ O link para desplegar la WebApp:
    
 | **React JS** |
 |:--:|
-|![React JS](https://media.licdn.com/dms/image/v2/D4D2DAQElCZ9deok7oQ/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1728162521293?e=1728878400&v=beta&t=9Sc47SYH7H8VmoM7ms_WnDFYuQWoMoJWhT5RiH9m5jc)|
+|![React JS](https://media.licdn.com/dms/image/v2/D4D2DAQFQuou2pbJztw/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1728448065380?e=1729569600&v=beta&t=2CXIhSPTWeICY_AKrISd4SgqMhN7oqHhlJK0OMjpZxQ)|
 
 
 <br>
