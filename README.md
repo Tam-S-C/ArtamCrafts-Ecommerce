@@ -11,6 +11,7 @@
 
 * [MP4](https://drive.google.com/file/d/1pySEPA8fCn9KWKmDcm-UkP3RCABIpMAZ/view?usp=sharing)
   
+* [Certificado-TopTen](https://www.coderhouse.com/ar/certificados/66f716c14adcbaf2695292c5?lang=es) 
 
 ---
 
@@ -152,10 +153,6 @@ O link para desplegar la WebApp:
 
 <h3>Gracias por ver mi proyecto! :sparkling_heart: <h3>
 <h5>Tam S. C.</h5>
-<br>
-   
-[Certificado-TopTen](https://www.coderhouse.com/ar/certificados/66f716c14adcbaf2695292c5?lang=es) 
-  
 <br>
    
 
