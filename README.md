@@ -158,10 +158,5 @@ O link para desplegar la WebApp:
   
 <br>
    
-| **React JS** |
-|:--:|
-|![React JS](https://media.licdn.com/dms/image/v2/D4D2DAQFQuou2pbJztw/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1728448065380?e=1729569600&v=beta&t=2CXIhSPTWeICY_AKrISd4SgqMhN7oqHhlJK0OMjpZxQ)|
 
-
-<br>
 
