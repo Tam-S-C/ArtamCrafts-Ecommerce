@@ -11,7 +11,7 @@
 
 * [MP4](https://drive.google.com/file/d/1pySEPA8fCn9KWKmDcm-UkP3RCABIpMAZ/view?usp=sharing)
   
-* [Certificado-TopTen](https://www.coderhouse.com/ar/certificados/66f716c14adcbaf2695292c5?lang=es) 
+* [Certificado-TopTen](https://pub.coderhouse.com/legacy-certificates/66f716c14adcbaf2695292c5?lang=es) 
 
 ---
 
